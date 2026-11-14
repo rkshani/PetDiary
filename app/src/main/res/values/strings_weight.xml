@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_title">Weight log</string>
+    <string name="weight_empty_title">No weight records yet</string>
+    <string name="weight_empty_message">Weigh your pet now and then to see how they grow.</string>
+    <string name="weight_add">Add weight</string>
+    <string name="weight_edit">Edit weight</string>
+    <string name="weight_value">Weight</string>
+</resources>

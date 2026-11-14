@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="weight_title">وزن کا ریکارڈ</string>
+    <string name="weight_empty_title">ابھی وزن درج نہیں</string>
+    <string name="weight_empty_message">وقتاً فوقتاً وزن کریں اور بڑھوتری دیکھیں۔</string>
+    <string name="weight_add">وزن شامل کریں</string>
+    <string name="weight_edit">وزن میں ترمیم</string>
+    <string name="weight_value">وزن</string>
+</resources>
