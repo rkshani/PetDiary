@@ -12,4 +12,8 @@
     <string name="vaccine_card_photo">ویکسین کارڈ کی تصویر</string>
     <string name="vaccine_given_on">لگی: %1$s</string>
     <string name="vaccine_next_on">اگلی: %1$s</string>
+    <string name="presets_hint">یہ اس قسم کے جانور کی عام ویکسین ہیں۔ غیر ضروری ہٹا دیں، نام یا تاریخ بدلیں یا اپنی شامل کریں، پھر محفوظ کریں دبائیں۔</string>
+    <string name="presets_none_for_type">اس قسم کے جانور کے لیے تیار فہرست نہیں۔ نیچے اپنی ویکسین شامل کریں۔</string>
+    <string name="presets_already_added">پہلے سے ریکارڈ میں ہے</string>
+    <string name="presets_add_custom">ایک اور ویکسین شامل کریں</string>
 </resources>
