@@ -121,6 +121,7 @@ fun PetProfileScreen(
 private fun ProfileTabContent(tab: ProfileTab, pet: Pet, nav: ProfileNav) {
     when (tab) {
         ProfileTab.OVERVIEW -> OverviewTab(pet, nav)
+        ProfileTab.FOOD -> com.diary.petcare.ui.feeding.FoodTab(nav)
         else -> com.diary.petcare.ui.components.PlaceholderScreen(tab.title)
     }
 }
