@@ -2,7 +2,7 @@
 <resources>
     <string name="feeding_schedule">کھانے کا شیڈول</string>
     <string name="feeding_empty_title">ابھی کھانے کے اوقات نہیں</string>
-    <string name="feeding_empty_message">کھانے کے اوقات شامل کریں اور وقت پر یاد دہانی پائیں۔</string>
+    <string name="feeding_empty_message">کھانے کے اوقات شامل کریں اور ہر کھانا ایک ٹیپ سے درج کریں۔</string>
     <string name="feeding_add_time">کھانے کا وقت شامل کریں</string>
     <string name="feeding_edit_time">کھانے کے وقت میں ترمیم</string>
     <string name="feeding_time">وقت</string>
