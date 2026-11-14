@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">Overview</string>
+    <string name="tab_health">Health</string>
+    <string name="tab_food">Food</string>
+    <string name="tab_weight">Weight</string>
+    <string name="tab_expenses">Expenses</string>
+    <string name="tab_gallery">Gallery</string>
+    <string name="profile_more">More options</string>
+    <string name="profile_timeline">Life timeline</string>
+    <string name="profile_health_report">Health report (PDF)</string>
+    <string name="overview_details">Details</string>
+</resources>

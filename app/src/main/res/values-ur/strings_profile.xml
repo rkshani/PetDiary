@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="tab_overview">خلاصہ</string>
+    <string name="tab_health">صحت</string>
+    <string name="tab_food">خوراک</string>
+    <string name="tab_weight">وزن</string>
+    <string name="tab_expenses">اخراجات</string>
+    <string name="tab_gallery">گیلری</string>
+    <string name="profile_more">مزید اختیارات</string>
+    <string name="profile_timeline">زندگی کی ٹائم لائن</string>
+    <string name="profile_health_report">صحت کی رپورٹ (PDF)</string>
+    <string name="overview_details">تفصیلات</string>
+</resources>
