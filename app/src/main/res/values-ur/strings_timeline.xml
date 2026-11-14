@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timeline_empty">کہانی یہاں سے شروع ہوتی ہے۔ ریکارڈ شامل کریں تو وہ ٹائم لائن پر نظر آئیں گے۔</string>
+    <string name="timeline_born">%1$s کی پیدائش</string>
+    <string name="timeline_joined">%1$s ڈائری میں شامل ہوا</string>
+    <string name="timeline_vaccine_given">ویکسین: %1$s</string>
+    <string name="timeline_vaccine_due">ویکسین کا وقت: %1$s</string>
+    <string name="timeline_medicine">%1$s شروع کی</string>
+    <string name="timeline_vet">ڈاکٹر کا دورہ: %1$s</string>
+    <string name="timeline_weight">وزن %1$s</string>
+    <string name="timeline_photo">نئی تصویر</string>
+</resources>
