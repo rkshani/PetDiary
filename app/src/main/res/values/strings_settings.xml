@@ -11,5 +11,5 @@
     <string name="settings_backup_hint">Save or restore a backup file</string>
     <string name="settings_about">About</string>
     <string name="settings_version">Version %1$s</string>
-    <string name="settings_offline_note">Pet Diary works fully offline. Your pets\' records and photos never leave this phone unless you share or back them up yourself.</string>
+    <string name="settings_offline_note">Pet Diary Sapphire works fully offline. Your pets\' records and photos never leave this phone unless you share or back them up yourself.</string>
 </resources>
