@@ -12,4 +12,16 @@
     <string name="notif_title_custom">%1$s کے لیے یاد دہانی 🔔</string>
     <string name="notif_done">ہو گیا</string>
     <string name="notif_snooze">15 منٹ بعد</string>
+    <string name="reminders_title">یاد دہانیاں</string>
+    <string name="reminders_empty_title">ابھی کوئی یاد دہانی نہیں</string>
+    <string name="reminders_empty_message">جب آپ کھانے کے اوقات، دوا، ویکسین کی تاریخ، ڈاکٹر کا دورہ یا صفائی شامل کریں گے تو یاد دہانیاں یہاں نظر آئیں گی۔</string>
+    <string name="reminders_today">آج</string>
+    <string name="reminders_upcoming">آنے والی</string>
+    <string name="reminders_off">بند</string>
+    <string name="reminders_daily_at">روزانہ %1$s بجے</string>
+    <string name="reminders_marked_done">ہو گیا کے طور پر نشان لگ گیا</string>
+    <string name="reminders_snoozed">15 منٹ کے لیے مؤخر</string>
+    <string name="reminders_permission_title">اطلاعات آن کریں</string>
+    <string name="reminders_permission_message">کھانے، دوا اور ویکسین کی یاد دہانی کے لیے پیٹ ڈائری کو اطلاعات کی اجازت چاہیے۔</string>
+    <string name="reminders_permission_allow">اجازت دیں</string>
 </resources>
