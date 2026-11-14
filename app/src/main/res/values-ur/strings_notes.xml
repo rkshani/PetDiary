@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notes_title">ڈائری نوٹس</string>
+    <string name="notes_empty">عادتیں، الرجی یا کوئی بھی یاد رکھنے کی بات لکھیں۔</string>
+    <string name="note_add">نوٹ شامل کریں</string>
+    <string name="note_edit">نوٹ میں ترمیم</string>
+    <string name="note_title">عنوان</string>
+    <string name="note_text">نوٹ</string>
+</resources>

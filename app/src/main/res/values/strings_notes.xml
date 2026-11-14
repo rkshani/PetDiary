@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="notes_title">Diary notes</string>
+    <string name="notes_empty">Write down habits, allergies or anything to remember.</string>
+    <string name="note_add">Add note</string>
+    <string name="note_edit">Edit note</string>
+    <string name="note_title">Title</string>
+    <string name="note_text">Note</string>
+</resources>
