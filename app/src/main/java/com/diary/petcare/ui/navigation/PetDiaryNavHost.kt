@@ -6,9 +6,7 @@ import androidx.navigation.NavBackStackEntry
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
-import com.diary.petcare.R
 import com.diary.petcare.ui.backup.BackupScreen
-import com.diary.petcare.ui.components.PlaceholderScreen
 import com.diary.petcare.ui.expenses.ExpenseEditScreen
 import com.diary.petcare.ui.feeding.FeedingHistoryScreen
 import com.diary.petcare.ui.grooming.GroomingEditScreen
@@ -26,6 +24,7 @@ import com.diary.petcare.ui.pets.PetsScreen
 import com.diary.petcare.ui.profile.PetProfileScreen
 import com.diary.petcare.ui.reminders.RemindersScreen
 import com.diary.petcare.ui.report.HealthReportScreen
+import com.diary.petcare.ui.settings.SettingsScreen
 import com.diary.petcare.ui.timeline.TimelineScreen
 import com.diary.petcare.ui.profile.ProfileNav
 
@@ -63,7 +62,9 @@ fun PetDiaryNavHost(
             )
         }
         composable(Routes.REMINDERS) { RemindersScreen(onOpenPet = { go(Routes.petProfile(it)) }) }
-        composable(Routes.SETTINGS) { PlaceholderScreen(R.string.nav_settings) }
+        composable(Routes.SETTINGS) {
+            SettingsScreen(onBackup = { go(Routes.BACKUP) }, onSetPin = { go(Routes.PIN_SETUP) })
+        }
 
         composable(Routes.PET_EDIT) {
             PetEditScreen(

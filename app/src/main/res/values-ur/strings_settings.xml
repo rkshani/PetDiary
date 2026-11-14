@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="settings_title">ترتیبات</string>
+    <string name="settings_general">عمومی</string>
+    <string name="settings_language">زبان</string>
+    <string name="settings_theme">تھیم</string>
+    <string name="settings_weight_unit">وزن کی اکائی</string>
+    <string name="settings_currency">کرنسی</string>
+    <string name="settings_security">حفاظت</string>
+    <string name="settings_data">آپ کا ڈیٹا</string>
+    <string name="settings_backup_hint">بیک اپ فائل محفوظ یا بحال کریں</string>
+    <string name="settings_about">ایپ کے بارے میں</string>
+    <string name="settings_version">ورژن %1$s</string>
+    <string name="settings_offline_note">پیٹ ڈائری مکمل آف لائن کام کرتی ہے۔ آپ کے ریکارڈ اور تصاویر اس فون سے باہر نہیں جاتیں جب تک آپ خود شیئر یا بیک اپ نہ کریں۔</string>
+</resources>
