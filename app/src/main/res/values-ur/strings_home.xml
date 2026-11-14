@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_title">آج</string>
+    <string name="home_welcome_title">پیٹ ڈائری میں خوش آمدید</string>
+    <string name="home_welcome_message">اپنا پالتو جانور شامل کریں اور کھانا، ویکسین، دوا، ڈاکٹر کے دورے اور بہت کچھ درج کریں۔ سب کچھ آپ کے فون میں ہی رہتا ہے۔</string>
+    <string name="home_quick_log">فوری اندراج</string>
+    <string name="home_feeding_today">آج کا کھانا (%d باقی)</string>
+    <string name="home_medicine_today">آج کی دوا (%d باقی)</string>
+    <string name="home_upcoming_vaccines">جلد آنے والی ویکسین</string>
+    <string name="home_coming_up">آنے والے کام</string>
+    <string name="home_all_clear">سب ٹھیک ہے!</string>
+    <string name="home_all_clear_message">آج کچھ باقی نہیں۔ کھانے کے اوقات یا دوا شامل کریں تو یہاں نظر آئیں گے۔</string>
+    <string name="home_nothing_left">آج کوئی کام باقی نہیں۔</string>
+    <string name="home_tasks_left">آج %d کام باقی ہیں</string>
+    <string name="home_fed_logged">%1$s کا کھانا درج ہو گیا</string>
+    <string name="quick_fed">کھانا</string>
+    <string name="quick_weight">وزن</string>
+    <string name="quick_expense">خرچ</string>
+    <string name="quick_vet">ڈاکٹر</string>
+</resources>

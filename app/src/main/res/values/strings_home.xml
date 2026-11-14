@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="home_title">Today</string>
+    <string name="home_welcome_title">Welcome to Pet Diary</string>
+    <string name="home_welcome_message">Add your pet to track meals, vaccines, medicine, vet visits and more. Everything stays on your phone.</string>
+    <string name="home_quick_log">Quick log</string>
+    <string name="home_feeding_today">Feeding today (%d left)</string>
+    <string name="home_medicine_today">Medicine today (%d left)</string>
+    <string name="home_upcoming_vaccines">Vaccines due soon</string>
+    <string name="home_coming_up">Coming up</string>
+    <string name="home_all_clear">All clear!</string>
+    <string name="home_all_clear_message">Nothing due today. Add feeding times or medicine to see them here.</string>
+    <string name="home_nothing_left">Nothing left to do today.</string>
+    <string name="home_tasks_left">%d care tasks left today</string>
+    <string name="home_fed_logged">Meal logged for %1$s</string>
+    <string name="quick_fed">Fed</string>
+    <string name="quick_weight">Weight</string>
+    <string name="quick_expense">Expense</string>
+    <string name="quick_vet">Vet</string>
+</resources>
