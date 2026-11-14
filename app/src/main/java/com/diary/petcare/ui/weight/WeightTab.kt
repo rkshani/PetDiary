@@ -54,7 +54,7 @@ fun WeightTab(nav: ProfileNav, viewModel: WeightTabViewModel = hiltViewModel()) 
     val list = logs ?: return LoadingBox()
 
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = 24.dp)) {
-        // WEIGHT_CHART
+        if (list.size >= 2) item(key = "chart") { WeightChart(list, unit) }
         item { AddSectionHeader(stringResource(R.string.weight_title), onAdd = { nav.editWeight(0) }) }
         if (list.isEmpty()) {
             item {
