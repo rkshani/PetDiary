@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Actions -->
+    <string name="action_back">واپس</string>
+    <string name="action_save">محفوظ کریں</string>
+    <string name="action_cancel">منسوخ</string>
+    <string name="action_delete">حذف کریں</string>
+    <string name="action_edit">ترمیم</string>
+    <string name="action_add">شامل کریں</string>
+    <string name="action_ok">ٹھیک ہے</string>
+    <string name="action_clear">صاف کریں</string>
+    <string name="action_done">ہو گیا</string>
+    <string name="action_next">آگے</string>
+    <string name="action_skip">چھوڑیں</string>
+    <string name="action_share">شیئر کریں</string>
+    <string name="action_see_all">سب دیکھیں</string>
+    <string name="delete_title">حذف کریں؟</string>
+    <string name="delete_message_generic">یہ اندراج حذف ہو جائے گا۔ اسے واپس نہیں لایا جا سکتا۔</string>
+    <string name="error_required">ضروری ہے</string>
+    <string name="error_invalid_number">درست نمبر لکھیں</string>
+    <string name="saved">محفوظ ہو گیا</string>
+    <string name="today">آج</string>
+    <string name="tomorrow">کل</string>
+    <string name="yesterday">گزشتہ کل</string>
+    <string name="overdue">تاخیر</string>
+    <string name="in_days">%d دن میں</string>
+    <string name="days_ago">%d دن پہلے</string>
+    <string name="notes">نوٹس</string>
+    <string name="date">تاریخ</string>
+    <string name="optional">اختیاری</string>
+    <string name="remind_me">یاد دلائیں</string>
+
+    <!-- Photos -->
+    <string name="photo_from_gallery">گیلری سے منتخب کریں</string>
+    <string name="photo_from_camera">تصویر کھینچیں</string>
+    <string name="photo_remove">تصویر ہٹائیں</string>
+    <string name="photo_add">تصویر شامل کریں</string>
+
+    <!-- Pet types -->
+    <string name="pet_type_cat">بلی</string>
+    <string name="pet_type_dog">کتا</string>
+    <string name="pet_type_bird">پرندہ</string>
+    <string name="pet_type_parrot">طوطا</string>
+    <string name="pet_type_hen">مرغی</string>
+    <string name="pet_type_rabbit">خرگوش</string>
+    <string name="pet_type_fish">مچھلی</string>
+    <string name="pet_type_hamster">ہیمسٹر</string>
+    <string name="pet_type_turtle">کچھوا</string>
+    <string name="pet_type_goat">بکری</string>
+    <string name="pet_type_cow">گائے</string>
+    <string name="pet_type_horse">گھوڑا</string>
+    <string name="pet_type_other">دیگر</string>
+
+    <!-- Gender -->
+    <string name="gender_male">نر</string>
+    <string name="gender_female">مادہ</string>
+    <string name="gender_unknown">معلوم نہیں</string>
+
+    <!-- Medicine kinds -->
+    <string name="medicine_kind_medicine">دوا</string>
+    <string name="medicine_kind_deworming">کیڑے مار دوا</string>
+    <string name="medicine_kind_flea_tick">پسو / چیچڑی</string>
+    <string name="medicine_kind_supplement">سپلیمنٹ</string>
+
+    <!-- Grooming -->
+    <string name="grooming_bath">نہلانا</string>
+    <string name="grooming_nail_cut">ناخن کاٹنا</string>
+    <string name="grooming_haircut">بال کاٹنا</string>
+    <string name="grooming_brushing">برش کرنا</string>
+    <string name="grooming_teeth">دانت صاف کرنا</string>
+    <string name="grooming_ear_clean">کان صاف کرنا</string>
+    <string name="grooming_other">دیگر</string>
+
+    <!-- Expense categories -->
+    <string name="expense_food">خوراک</string>
+    <string name="expense_vet">ڈاکٹر</string>
+    <string name="expense_medicine">دوا</string>
+    <string name="expense_toys">کھلونے</string>
+    <string name="expense_grooming">صفائی ستھرائی</string>
+    <string name="expense_accessories">لوازمات</string>
+    <string name="expense_other">دیگر</string>
+
+    <!-- Reminder types -->
+    <string name="reminder_type_feeding">کھانا</string>
+    <string name="reminder_type_medicine">دوا</string>
+    <string name="reminder_type_vaccine">ویکسین</string>
+    <string name="reminder_type_vet">ڈاکٹر کا دورہ</string>
+    <string name="reminder_type_grooming">صفائی ستھرائی</string>
+    <string name="reminder_type_custom">یاد دہانی</string>
+
+    <!-- Settings values -->
+    <string name="theme_system">سسٹم کے مطابق</string>
+    <string name="theme_light">روشن</string>
+    <string name="theme_dark">گہرا</string>
+    <string name="language_system">سسٹم کے مطابق</string>
+    <string name="language_english">English (انگریزی)</string>
+    <string name="language_urdu">اردو</string>
+    <string name="unit_kg">کلوگرام (kg)</string>
+    <string name="unit_lb">پاؤنڈ (lb)</string>
+    <string name="currency_pkr">پاکستانی روپیہ (Rs)</string>
+    <string name="currency_usd">امریکی ڈالر ($)</string>
+    <string name="currency_inr">بھارتی روپیہ (₹)</string>
+    <string name="currency_aed">اماراتی درہم (AED)</string>
+    <string name="currency_sar">سعودی ریال (SAR)</string>
+    <string name="currency_gbp">برطانوی پاؤنڈ (£)</string>
+    <string name="currency_eur">یورو (€)</string>
+</resources>
