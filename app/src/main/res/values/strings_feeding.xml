@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="feeding_schedule">Feeding schedule</string>
+    <string name="feeding_empty_title">No feeding times yet</string>
+    <string name="feeding_empty_message">Add meal times and get a reminder when food is due.</string>
+    <string name="feeding_add_time">Add feeding time</string>
+    <string name="feeding_edit_time">Edit feeding time</string>
+    <string name="feeding_time">Time</string>
+    <string name="feeding_food">Food</string>
+    <string name="feeding_quantity">Quantity</string>
+    <string name="feeding_quantity_hint">For example: 1 cup, 50 g, half can</string>
+    <string name="feeding_fed">Fed</string>
+    <string name="feeding_log_extra">Log a meal</string>
+    <string name="feeding_history">History</string>
+    <string name="feeding_extra_today">Other meals today</string>
+</resources>
