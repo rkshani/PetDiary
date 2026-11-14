@@ -10,6 +10,7 @@ import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
+import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
 import com.diary.petcare.ui.format.LocalAppSettings
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.diary.petcare.data.settings.LocaleStore
@@ -40,6 +41,8 @@ class MainActivity : ComponentActivity() {
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        // Keep the splash until settings (theme, onboarding, lock) are read.
+        installSplashScreen().setKeepOnScreenCondition { viewModel.settings.value == null }
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
