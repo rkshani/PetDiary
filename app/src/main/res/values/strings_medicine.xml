@@ -17,4 +17,6 @@
     <string name="medicine_end_before_start">End date must be on or after the start date</string>
     <string name="medicine_active">Active</string>
     <string name="medicine_finished">Finished</string>
+    <string name="doses_today">Today\'s doses (%1$d of %2$d given)</string>
+    <string name="dose_given_at">Given %1$s</string>
 </resources>

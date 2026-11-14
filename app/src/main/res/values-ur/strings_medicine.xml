@@ -17,4 +17,6 @@
     <string name="medicine_end_before_start">ختم کی تاریخ شروع کی تاریخ سے پہلے نہیں ہو سکتی</string>
     <string name="medicine_active">جاری</string>
     <string name="medicine_finished">مکمل</string>
+    <string name="doses_today">آج کی خوراکیں (%2$d میں سے %1$d دی گئیں)</string>
+    <string name="dose_given_at">%1$s پر دی</string>
 </resources>
