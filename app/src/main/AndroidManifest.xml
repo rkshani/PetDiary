@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Pet Diary is FULLY OFFLINE. Never add the INTERNET permission. -->
 <!-- Version 1 asks for no permissions. The lines below strip any that a library adds. -->
+<!-- NOTE: every <uses-permission> / <permission> line here has tools:node="remove".
+     They are BLOCKERS, not requests. They delete these permissions from the final merged
+     manifest. Do NOT delete these lines, or libraries will add the permissions back. -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
