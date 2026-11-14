@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="timeline_empty">The story starts here. Add records and they will show up on the timeline.</string>
+    <string name="timeline_born">%1$s was born</string>
+    <string name="timeline_joined">%1$s joined the diary</string>
+    <string name="timeline_vaccine_given">Vaccine: %1$s</string>
+    <string name="timeline_vaccine_due">Vaccine due: %1$s</string>
+    <string name="timeline_medicine">Started %1$s</string>
+    <string name="timeline_vet">Vet visit: %1$s</string>
+    <string name="timeline_weight">Weighed %1$s</string>
+    <string name="timeline_photo">New photo</string>
+</resources>
