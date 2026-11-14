@@ -7,4 +7,7 @@
     <string name="expense_edit">خرچ میں ترمیم</string>
     <string name="expense_amount">رقم</string>
     <string name="expense_category">زمرہ</string>
+    <string name="summary_prev_month">پچھلا مہینہ</string>
+    <string name="summary_next_month">اگلا مہینہ</string>
+    <string name="summary_last_month">اس سے پہلے کا مہینہ: %1$s</string>
 </resources>

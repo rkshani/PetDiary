@@ -57,7 +57,7 @@ fun ExpensesTab(nav: ProfileNav, viewModel: ExpensesTabViewModel = hiltViewModel
     val byMonth = list.groupBy { DateTimeUtils.startOfMonth(it.date) }.toSortedMap(compareByDescending { it })
 
     LazyColumn(Modifier.fillMaxSize(), contentPadding = PaddingValues(bottom = 24.dp)) {
-        // EXPENSE_SUMMARY
+        if (list.isNotEmpty()) item(key = "summary") { MonthlySummaryCard(list) }
         item { AddSectionHeader(stringResource(R.string.expenses_title), onAdd = { nav.editExpense(0) }) }
         if (list.isEmpty()) {
             item {
