@@ -10,6 +10,7 @@ import com.diary.petcare.R
 import com.diary.petcare.ui.components.PlaceholderScreen
 import com.diary.petcare.ui.feeding.FeedingHistoryScreen
 import com.diary.petcare.ui.feeding.FeedingScheduleEditScreen
+import com.diary.petcare.ui.health.VaccineEditScreen
 import com.diary.petcare.ui.pets.PetEditScreen
 import com.diary.petcare.ui.pets.PetsScreen
 import com.diary.petcare.ui.profile.PetProfileScreen
@@ -62,7 +63,7 @@ fun PetDiaryNavHost(
         // Screens below are filled in by their feature branches.
         composable(Routes.FEEDING_SCHEDULE_EDIT) { FeedingScheduleEditScreen(onBack = back) }
         composable(Routes.FEEDING_HISTORY) { FeedingHistoryScreen(onBack = back) }
-        composable(Routes.VACCINE_EDIT) { PlaceholderScreen(R.string.tab_health) }
+        composable(Routes.VACCINE_EDIT) { VaccineEditScreen(onBack = back) }
         composable(Routes.VACCINE_PRESETS) { PlaceholderScreen(R.string.tab_health) }
         composable(Routes.MEDICINE_EDIT) { PlaceholderScreen(R.string.tab_health) }
         composable(Routes.VET_VISIT_EDIT) { PlaceholderScreen(R.string.tab_health) }

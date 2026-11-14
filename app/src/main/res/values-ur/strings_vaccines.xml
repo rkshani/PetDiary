@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vaccines_title">ویکسین</string>
+    <string name="vaccines_presets">تیار فہرست</string>
+    <string name="vaccines_empty">ابھی کوئی ویکسین درج نہیں۔</string>
+    <string name="vaccine_add">ویکسین شامل کریں</string>
+    <string name="vaccine_edit">ویکسین میں ترمیم</string>
+    <string name="vaccine_name">ویکسین کا نام</string>
+    <string name="vaccine_date_given">لگنے کی تاریخ</string>
+    <string name="vaccine_next_due">اگلی تاریخ</string>
+    <string name="vaccine_vet">ڈاکٹر / کلینک</string>
+    <string name="vaccine_card_photo">ویکسین کارڈ کی تصویر</string>
+    <string name="vaccine_given_on">لگی: %1$s</string>
+    <string name="vaccine_next_on">اگلی: %1$s</string>
+</resources>
