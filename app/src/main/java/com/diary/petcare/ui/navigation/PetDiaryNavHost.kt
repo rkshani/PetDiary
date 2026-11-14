@@ -16,6 +16,7 @@ import com.diary.petcare.ui.health.MedicineEditScreen
 import com.diary.petcare.ui.health.VaccineEditScreen
 import com.diary.petcare.ui.health.VaccinePresetsScreen
 import com.diary.petcare.ui.health.VetVisitEditScreen
+import com.diary.petcare.ui.notes.NoteEditScreen
 import com.diary.petcare.ui.pets.PetEditScreen
 import com.diary.petcare.ui.weight.WeightEditScreen
 import com.diary.petcare.ui.pets.PetsScreen
@@ -76,7 +77,7 @@ fun PetDiaryNavHost(
         composable(Routes.WEIGHT_EDIT) { WeightEditScreen(onBack = back) }
         composable(Routes.GROOMING_EDIT) { GroomingEditScreen(onBack = back) }
         composable(Routes.EXPENSE_EDIT) { ExpenseEditScreen(onBack = back) }
-        composable(Routes.NOTE_EDIT) { PlaceholderScreen(R.string.notes) }
+        composable(Routes.NOTE_EDIT) { NoteEditScreen(onBack = back) }
         composable(Routes.TIMELINE) { PlaceholderScreen(R.string.profile_timeline) }
         composable(Routes.HEALTH_REPORT) { PlaceholderScreen(R.string.profile_health_report) }
     }

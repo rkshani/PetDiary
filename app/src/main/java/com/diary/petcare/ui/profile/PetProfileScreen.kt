@@ -122,6 +122,7 @@ private fun ProfileTabContent(tab: ProfileTab, pet: Pet, nav: ProfileNav) {
     when (tab) {
         ProfileTab.OVERVIEW -> OverviewTab(pet, nav) {
             com.diary.petcare.ui.grooming.GroomingSection(nav)
+            com.diary.petcare.ui.notes.NotesSection(nav)
             // OVERVIEW_SECTIONS
         }
         ProfileTab.HEALTH -> com.diary.petcare.ui.health.HealthTab(nav)
