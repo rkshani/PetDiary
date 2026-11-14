@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="report_title">صحت کی رپورٹ: %1$s</string>
+    <string name="report_generated">%1$s کو پیٹ ڈائری سے بنائی گئی</string>
+    <string name="report_profile">پروفائل</string>
+    <string name="report_none">کوئی ریکارڈ نہیں۔</string>
+    <string name="report_footer">یہ رپورٹ مالک کے اپنے ریکارڈ سے پیٹ ڈائری میں بنائی گئی ہے۔ براہ کرم تفصیلات اپنے ڈاکٹر سے تصدیق کریں۔</string>
+    <string name="report_page">صفحہ %1$d</string>
+    <string name="report_intro">اپنے پالتو جانور کے صحت کے ریکارڈ کی PDF بنائیں اور ڈاکٹر کو بھیجیں۔ منتخب کریں کیا شامل ہو:</string>
+    <string name="report_create">PDF بنائیں</string>
+    <string name="report_failed">رپورٹ نہیں بن سکی۔ دوبارہ کوشش کریں۔</string>
+    <string name="report_ready">رپورٹ تیار ہے</string>
+    <string name="report_share">PDF شیئر کریں</string>
+    <string name="report_open">PDF کھولیں</string>
+</resources>
