@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="home_title">آج</string>
-    <string name="home_welcome_title">پیٹ ڈائری میں خوش آمدید</string>
+    <string name="home_welcome_title">پیٹ ڈائری سیفائر میں خوش آمدید</string>
     <string name="home_welcome_message">اپنا پالتو جانور شامل کریں اور کھانا، ویکسین، دوا، ڈاکٹر کے دورے اور بہت کچھ درج کریں۔ سب کچھ آپ کے فون میں ہی رہتا ہے۔</string>
     <string name="home_quick_log">فوری اندراج</string>
     <string name="home_feeding_today">آج کا کھانا (%d باقی)</string>

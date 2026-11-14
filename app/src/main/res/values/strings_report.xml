@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="report_title">Health report: %1$s</string>
-    <string name="report_generated">Made on %1$s with Pet Diary</string>
+    <string name="report_generated">Made on %1$s with Pet Diary Sapphire</string>
     <string name="report_profile">Profile</string>
     <string name="report_none">No records.</string>
-    <string name="report_footer">This report was made from the owner\'s own records in Pet Diary. Please check details with your vet.</string>
+    <string name="report_footer">This report was made from the owner\'s own records in Pet Diary Sapphire. Please check details with your vet.</string>
     <string name="report_page">Page %1$d</string>
     <string name="report_intro">Make a PDF of your pet\'s health records to share with the vet. Choose what to include:</string>
     <string name="report_create">Create PDF</string>

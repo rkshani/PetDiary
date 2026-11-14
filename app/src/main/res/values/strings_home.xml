@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="home_title">Today</string>
-    <string name="home_welcome_title">Welcome to Pet Diary</string>
+    <string name="home_welcome_title">Welcome to Pet Diary Sapphire</string>
     <string name="home_welcome_message">Add your pet to track meals, vaccines, medicine, vet visits and more. Everything stays on your phone.</string>
     <string name="home_quick_log">Quick log</string>
     <string name="home_feeding_today">Feeding today (%d left)</string>

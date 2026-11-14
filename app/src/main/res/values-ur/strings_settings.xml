@@ -11,5 +11,5 @@
     <string name="settings_backup_hint">بیک اپ فائل محفوظ یا بحال کریں</string>
     <string name="settings_about">ایپ کے بارے میں</string>
     <string name="settings_version">ورژن %1$s</string>
-    <string name="settings_offline_note">پیٹ ڈائری مکمل آف لائن کام کرتی ہے۔ آپ کے ریکارڈ اور تصاویر اس فون سے باہر نہیں جاتیں جب تک آپ خود شیئر یا بیک اپ نہ کریں۔</string>
+    <string name="settings_offline_note">پیٹ ڈائری سیفائر مکمل آف لائن کام کرتی ہے۔ آپ کے ریکارڈ اور تصاویر اس فون سے باہر نہیں جاتیں جب تک آپ خود شیئر یا بیک اپ نہ کریں۔</string>
 </resources>

@@ -22,6 +22,6 @@
     <string name="reminders_marked_done">Marked as done</string>
     <string name="reminders_snoozed">Snoozed for 15 minutes</string>
     <string name="reminders_permission_title">Turn on notifications</string>
-    <string name="reminders_permission_message">Pet Diary needs notification access to remind you about meals, medicine and vaccines.</string>
+    <string name="reminders_permission_message">Pet Diary Sapphire needs notification access to remind you about meals, medicine and vaccines.</string>
     <string name="reminders_permission_allow">Allow notifications</string>
 </resources>

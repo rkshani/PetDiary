@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="backup_title">بیک اپ اور بحالی</string>
-    <string name="backup_intro">پیٹ ڈائری مکمل آف لائن کام کرتی ہے۔ بیک اپ فائل فون، ایس ڈی کارڈ یا یو ایس بی میں محفوظ کریں تاکہ فون بدلنے پر بھی ریکارڈ محفوظ رہے۔</string>
+    <string name="backup_intro">پیٹ ڈائری سیفائر مکمل آف لائن کام کرتی ہے۔ بیک اپ فائل فون، ایس ڈی کارڈ یا یو ایس بی میں محفوظ کریں تاکہ فون بدلنے پر بھی ریکارڈ محفوظ رہے۔</string>
     <string name="backup_create_title">بیک اپ بنائیں</string>
     <string name="backup_create_message">تمام پالتو جانور، ریکارڈ اور تصاویر ایک .zip فائل میں آپ کی منتخب جگہ پر محفوظ ہوں گی۔</string>
     <string name="backup_create">بیک اپ فائل بنائیں</string>
@@ -16,6 +16,6 @@
     <string name="backup_restart">ابھی دوبارہ شروع کریں</string>
     <string name="backup_error_write">بیک اپ فائل محفوظ نہیں ہو سکی۔ کوئی اور جگہ منتخب کریں۔</string>
     <string name="backup_error_read">بیک اپ فائل پڑھی نہیں جا سکی۔</string>
-    <string name="backup_error_not_backup">یہ پیٹ ڈائری کی بیک اپ فائل نہیں ہے۔</string>
-    <string name="backup_error_newer">یہ بیک اپ پیٹ ڈائری کے نئے ورژن سے بنا ہے۔ پہلے ایپ اپڈیٹ کریں۔</string>
+    <string name="backup_error_not_backup">یہ پیٹ ڈائری سیفائر کی بیک اپ فائل نہیں ہے۔</string>
+    <string name="backup_error_newer">یہ بیک اپ پیٹ ڈائری سیفائر کے نئے ورژن سے بنا ہے۔ پہلے ایپ اپڈیٹ کریں۔</string>
 </resources>
