@@ -2,7 +2,7 @@
 <resources>
     <string name="feeding_schedule">Feeding schedule</string>
     <string name="feeding_empty_title">No feeding times yet</string>
-    <string name="feeding_empty_message">Add meal times and get a reminder when food is due.</string>
+    <string name="feeding_empty_message">Add meal times and log each meal with one tap.</string>
     <string name="feeding_add_time">Add feeding time</string>
     <string name="feeding_edit_time">Edit feeding time</string>
     <string name="feeding_time">Time</string>
