@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pets_title">My pets</string>
+    <string name="pets_add">Add pet</string>
+    <string name="pets_empty_title">No pets yet</string>
+    <string name="pets_empty_message">Add your first pet to start their care diary.</string>
+    <string name="age_newborn">Newborn</string>
+    <plurals name="age_years">
+        <item quantity="one">%d year</item>
+        <item quantity="other">%d years</item>
+    </plurals>
+    <plurals name="age_months">
+        <item quantity="one">%d month</item>
+        <item quantity="other">%d months</item>
+    </plurals>
+</resources>

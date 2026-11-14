@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pets_title">میرے پالتو جانور</string>
+    <string name="pets_add">پالتو جانور شامل کریں</string>
+    <string name="pets_empty_title">ابھی کوئی پالتو جانور نہیں</string>
+    <string name="pets_empty_message">اپنا پہلا پالتو جانور شامل کریں اور اس کی دیکھ بھال کی ڈائری شروع کریں۔</string>
+    <string name="age_newborn">نومولود</string>
+    <plurals name="age_years">
+        <item quantity="one">%d سال</item>
+        <item quantity="other">%d سال</item>
+    </plurals>
+    <plurals name="age_months">
+        <item quantity="one">%d مہینہ</item>
+        <item quantity="other">%d مہینے</item>
+    </plurals>
+</resources>
