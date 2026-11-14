@@ -14,6 +14,7 @@ import com.diary.petcare.ui.profile.ProfileNav
 @Composable
 fun HealthTab(nav: ProfileNav) {
     Column(Modifier.fillMaxSize().verticalScroll(rememberScrollState()).padding(bottom = 24.dp)) {
+        TodayDosesSection()
         VaccinesSection(nav)
         MedicinesSection(nav)
         // HEALTH_SECTIONS
