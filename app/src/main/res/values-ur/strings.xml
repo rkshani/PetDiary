@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">پیٹ ڈائری</string>
+
+    <!-- Navigation -->
+    <string name="nav_home">ہوم</string>
+    <string name="nav_pets">پالتو جانور</string>
+    <string name="nav_reminders">یاد دہانیاں</string>
+    <string name="nav_settings">ترتیبات</string>
 </resources>
