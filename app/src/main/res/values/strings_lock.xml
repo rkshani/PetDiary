@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_setting">App lock (PIN)</string>
+    <string name="lock_off">Off. Tap to set a PIN.</string>
+    <string name="lock_on">On. A PIN is needed to open the app.</string>
+    <string name="lock_change_pin">Change PIN</string>
+    <string name="lock_change_pin_hint">Set a new PIN</string>
+    <string name="lock_turn_off">Turn off app lock</string>
+    <string name="lock_turn_off_hint">Open the app without a PIN</string>
+    <string name="lock_enter_pin">Enter your PIN</string>
+    <string name="lock_new_pin">Choose a PIN</string>
+    <string name="lock_confirm_pin">Type the PIN again</string>
+    <string name="lock_mismatch">The PINs did not match. Please start again.</string>
+    <string name="lock_pin_length">%1$d to %2$d digits</string>
+    <string name="lock_wrong">Wrong PIN. Try again.</string>
+    <string name="lock_wait">Too many tries. Wait %1$d seconds.</string>
+    <string name="lock_delete_digit">Delete digit</string>
+    <string name="lock_forgot_hint">Forgot your PIN? The app is offline, so the only way back is to clear the app\'s data in phone settings. Keep a backup file.</string>
+</resources>

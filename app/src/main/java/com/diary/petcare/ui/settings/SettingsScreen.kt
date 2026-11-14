@@ -16,6 +16,9 @@ import androidx.compose.material.icons.outlined.CurrencyExchange
 import androidx.compose.material.icons.outlined.DarkMode
 import androidx.compose.material.icons.outlined.Info
 import androidx.compose.material.icons.outlined.Language
+import androidx.compose.material.icons.outlined.Lock
+import androidx.compose.material.icons.outlined.LockOpen
+import androidx.compose.material.icons.outlined.Password
 import androidx.compose.material.icons.outlined.Scale
 import androidx.compose.material3.AlertDialog
 import androidx.compose.material3.HorizontalDivider
@@ -107,7 +110,7 @@ fun SettingsScreen(
             }
 
             SectionHeader(stringResource(R.string.settings_security))
-            LockSettings(lockEnabled = s.lockEnabled, onSetPin = onSetPin, onDisable = viewModel::disableLock)
+            LockSettings(lockEnabled = s.lockEnabled, onSetPin = onSetPin, onDisable = { viewModel.disableLock() })
 
             SectionHeader(stringResource(R.string.settings_data))
             SettingRow(Icons.Outlined.Backup, stringResource(R.string.backup_title), stringResource(R.string.settings_backup_hint), onBackup)
@@ -152,10 +155,16 @@ fun SettingsScreen(
     }
 }
 
-/** App lock rows. Filled in by the app-lock branch. */
+/** App lock rows (PIN only). */
 @Composable
 private fun LockSettings(lockEnabled: Boolean, onSetPin: () -> Unit, onDisable: () -> Unit) {
-    // APP_LOCK_ROWS
+    if (!lockEnabled) {
+        SettingRow(Icons.Outlined.Lock, stringResource(R.string.lock_setting), stringResource(R.string.lock_off), onSetPin)
+    } else {
+        SettingRow(Icons.Outlined.Lock, stringResource(R.string.lock_setting), stringResource(R.string.lock_on)) {}
+        SettingRow(Icons.Outlined.Password, stringResource(R.string.lock_change_pin), stringResource(R.string.lock_change_pin_hint), onSetPin)
+        SettingRow(Icons.Outlined.LockOpen, stringResource(R.string.lock_turn_off), stringResource(R.string.lock_turn_off_hint), onDisable)
+    }
 }
 
 @Composable

@@ -14,6 +14,7 @@ import com.diary.petcare.ui.format.LocalAppSettings
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.diary.petcare.data.settings.LocaleStore
 import com.diary.petcare.domain.model.ThemeMode
+import com.diary.petcare.ui.lock.LockScreen
 import com.diary.petcare.ui.navigation.PetDiaryAppUi
 import com.diary.petcare.ui.navigation.Routes
 import com.diary.petcare.ui.theme.PetDiaryTheme
@@ -26,6 +27,16 @@ class MainActivity : ComponentActivity() {
 
     override fun attachBaseContext(newBase: Context) {
         super.attachBaseContext(LocaleStore.wrap(newBase))
+    }
+
+    override fun onStart() {
+        super.onStart()
+        viewModel.onAppStarted()
+    }
+
+    override fun onStop() {
+        super.onStop()
+        viewModel.onAppStopped()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -41,9 +52,14 @@ class MainActivity : ComponentActivity() {
             }
             PetDiaryTheme(darkTheme = dark) {
                 CompositionLocalProvider(LocalAppSettings provides loaded) {
-                    // Decided once per launch so finishing onboarding does not rebuild the graph.
-                    val start = remember { if (loaded.onboardingDone) Routes.HOME else Routes.ONBOARDING }
-                    PetDiaryAppUi(startDestination = start)
+                    val unlocked by viewModel.unlocked.collectAsStateWithLifecycle()
+                    if (loaded.lockEnabled && !unlocked) {
+                        LockScreen(checkPin = viewModel::checkPin, onUnlocked = viewModel::onUnlocked)
+                    } else {
+                        // Decided once per launch so finishing onboarding does not rebuild the graph.
+                        val start = remember { if (loaded.onboardingDone) Routes.HOME else Routes.ONBOARDING }
+                        PetDiaryAppUi(startDestination = start)
+                    }
                 }
             }
         }
