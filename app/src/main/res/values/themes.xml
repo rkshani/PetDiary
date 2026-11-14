@@ -3,4 +3,11 @@
     <style name="Theme.PetDiary" parent="android:Theme.Material.Light.NoActionBar">
         <item name="android:windowBackground">@color/window_background</item>
     </style>
+
+    <!-- Splash (core-splashscreen works back to API 24). -->
+    <style name="Theme.PetDiary.Starting" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/window_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash</item>
+        <item name="postSplashScreenTheme">@style/Theme.PetDiary</item>
+    </style>
 </resources>
