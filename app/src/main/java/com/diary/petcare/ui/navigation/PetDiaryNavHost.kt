@@ -18,6 +18,7 @@ import com.diary.petcare.ui.health.VaccineEditScreen
 import com.diary.petcare.ui.health.VaccinePresetsScreen
 import com.diary.petcare.ui.health.VetVisitEditScreen
 import com.diary.petcare.ui.notes.NoteEditScreen
+import com.diary.petcare.ui.onboarding.OnboardingScreen
 import com.diary.petcare.ui.pets.PetEditScreen
 import com.diary.petcare.ui.weight.WeightEditScreen
 import com.diary.petcare.ui.pets.PetsScreen
@@ -101,6 +102,11 @@ fun PetDiaryNavHost(
         composable(Routes.TIMELINE) { TimelineScreen(onBack = back) }
         composable(Routes.HEALTH_REPORT) { HealthReportScreen(onBack = back) }
         composable(Routes.BACKUP) { BackupScreen(onBack = back) }
+        composable(Routes.ONBOARDING) {
+            OnboardingScreen(onFinished = {
+                navController.navigate(Routes.HOME) { popUpTo(Routes.ONBOARDING) { inclusive = true } }
+            })
+        }
     }
 }
 

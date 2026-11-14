@@ -9,12 +9,13 @@ import androidx.activity.viewModels
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
-import com.diary.petcare.domain.model.AppSettings
+import androidx.compose.runtime.remember
 import com.diary.petcare.ui.format.LocalAppSettings
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.diary.petcare.data.settings.LocaleStore
 import com.diary.petcare.domain.model.ThemeMode
 import com.diary.petcare.ui.navigation.PetDiaryAppUi
+import com.diary.petcare.ui.navigation.Routes
 import com.diary.petcare.ui.theme.PetDiaryTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -32,14 +33,17 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             val settings by viewModel.settings.collectAsStateWithLifecycle()
-            val dark = when (settings?.themeMode ?: ThemeMode.SYSTEM) {
+            val loaded = settings ?: return@setContent // wait for the first read; the splash covers this
+            val dark = when (loaded.themeMode) {
                 ThemeMode.SYSTEM -> isSystemInDarkTheme()
                 ThemeMode.LIGHT -> false
                 ThemeMode.DARK -> true
             }
             PetDiaryTheme(darkTheme = dark) {
-                CompositionLocalProvider(LocalAppSettings provides (settings ?: AppSettings())) {
-                    PetDiaryAppUi()
+                CompositionLocalProvider(LocalAppSettings provides loaded) {
+                    // Decided once per launch so finishing onboarding does not rebuild the graph.
+                    val start = remember { if (loaded.onboardingDone) Routes.HOME else Routes.ONBOARDING }
+                    PetDiaryAppUi(startDestination = start)
                 }
             }
         }

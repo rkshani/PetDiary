@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_1_title">All your pet\'s care in one diary</string>
+    <string name="onboarding_1_message">Meals, vaccines, medicine, vet visits, weight, grooming and expenses for cats, dogs, birds, hens, rabbits, fish and more.</string>
+    <string name="onboarding_2_title">Never miss a meal or a vaccine</string>
+    <string name="onboarding_2_message">Get gentle reminders. Mark them done or snooze right from the notification.</string>
+    <string name="onboarding_3_title">Private and fully offline</string>
+    <string name="onboarding_3_message">No account, no internet. Everything stays on your phone, and you can make your own backup file.</string>
+    <string name="onboarding_start">Get started</string>
+</resources>
