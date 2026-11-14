@@ -77,6 +77,7 @@ room {
 kotlin {
     compilerOptions {
         jvmTarget.set(JvmTarget.JVM_17)
+        optIn.add("androidx.compose.material3.ExperimentalMaterial3Api")
     }
 }
 
