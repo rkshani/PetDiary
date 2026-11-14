@@ -12,6 +12,7 @@ import com.diary.petcare.ui.feeding.FeedingHistoryScreen
 import com.diary.petcare.ui.grooming.GroomingEditScreen
 import com.diary.petcare.ui.home.HomeNav
 import com.diary.petcare.ui.home.HomeScreen
+import com.diary.petcare.ui.lock.PinSetupScreen
 import com.diary.petcare.ui.feeding.FeedingScheduleEditScreen
 import com.diary.petcare.ui.health.MedicineEditScreen
 import com.diary.petcare.ui.health.VaccineEditScreen
@@ -102,6 +103,7 @@ fun PetDiaryNavHost(
         composable(Routes.TIMELINE) { TimelineScreen(onBack = back) }
         composable(Routes.HEALTH_REPORT) { HealthReportScreen(onBack = back) }
         composable(Routes.BACKUP) { BackupScreen(onBack = back) }
+        composable(Routes.PIN_SETUP) { PinSetupScreen(onDone = back) }
         composable(Routes.ONBOARDING) {
             OnboardingScreen(onFinished = {
                 navController.navigate(Routes.HOME) { popUpTo(Routes.ONBOARDING) { inclusive = true } }

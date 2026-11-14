@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lock_setting">ایپ لاک (PIN)</string>
+    <string name="lock_off">بند۔ PIN لگانے کے لیے دبائیں۔</string>
+    <string name="lock_on">آن۔ ایپ کھولنے کے لیے PIN چاہیے۔</string>
+    <string name="lock_change_pin">PIN بدلیں</string>
+    <string name="lock_change_pin_hint">نیا PIN لگائیں</string>
+    <string name="lock_turn_off">ایپ لاک بند کریں</string>
+    <string name="lock_turn_off_hint">ایپ بغیر PIN کے کھلے گی</string>
+    <string name="lock_enter_pin">اپنا PIN لکھیں</string>
+    <string name="lock_new_pin">PIN منتخب کریں</string>
+    <string name="lock_confirm_pin">PIN دوبارہ لکھیں</string>
+    <string name="lock_mismatch">دونوں PIN ایک جیسے نہیں۔ دوبارہ شروع کریں۔</string>
+    <string name="lock_pin_length">%1$d سے %2$d ہندسے</string>
+    <string name="lock_wrong">غلط PIN۔ دوبارہ کوشش کریں۔</string>
+    <string name="lock_wait">بہت زیادہ کوششیں۔ %1$d سیکنڈ انتظار کریں۔</string>
+    <string name="lock_delete_digit">ہندسہ مٹائیں</string>
+    <string name="lock_forgot_hint">PIN بھول گئے؟ ایپ آف لائن ہے، اس لیے واحد راستہ فون کی ترتیبات سے ایپ کا ڈیٹا صاف کرنا ہے۔ بیک اپ فائل رکھیں۔</string>
+</resources>
