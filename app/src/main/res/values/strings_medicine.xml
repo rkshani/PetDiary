@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="medicines_title">Medicines &amp; deworming</string>
+    <string name="medicines_empty">No medicine courses yet.</string>
+    <string name="medicine_add">Add medicine</string>
+    <string name="medicine_edit">Edit medicine</string>
+    <string name="medicine_name">Medicine name</string>
+    <string name="medicine_kind">Kind</string>
+    <string name="medicine_dose">Dose</string>
+    <string name="medicine_dose_hint">For example: 1 tablet, 2 ml, half tablet</string>
+    <string name="medicine_times">Times each day</string>
+    <string name="medicine_times_per_day">%d× a day</string>
+    <string name="medicine_add_time">Add time</string>
+    <string name="medicine_start">Start date</string>
+    <string name="medicine_end">End date</string>
+    <string name="medicine_no_end">No end date: the course keeps going until you set one.</string>
+    <string name="medicine_end_before_start">End date must be on or after the start date</string>
+    <string name="medicine_active">Active</string>
+    <string name="medicine_finished">Finished</string>
+</resources>
