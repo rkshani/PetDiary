@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pet_edit_title">Edit pet</string>
+    <string name="pet_name">Name</string>
+    <string name="pet_type">Type</string>
+    <string name="pet_breed">Breed</string>
+    <string name="pet_gender">Gender</string>
+    <string name="pet_birthday">Birthday</string>
+    <string name="pet_age_hint">Don\'t know the birthday? Enter an approximate age instead.</string>
+    <string name="pet_age_years">Age (years)</string>
+    <string name="pet_age_months">Age (months)</string>
+    <string name="pet_color">Color</string>
+    <string name="pet_microchip">Microchip number</string>
+    <string name="pet_delete_message">Delete %1$s and all of their records? This cannot be undone.</string>
+</resources>

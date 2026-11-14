@@ -7,6 +7,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.diary.petcare.R
 import com.diary.petcare.ui.components.PlaceholderScreen
+import com.diary.petcare.ui.pets.PetEditScreen
 import com.diary.petcare.ui.pets.PetsScreen
 
 @Composable
@@ -26,7 +27,21 @@ fun PetDiaryNavHost(
         }
         composable(Routes.REMINDERS) { PlaceholderScreen(R.string.nav_reminders) }
         composable(Routes.SETTINGS) { PlaceholderScreen(R.string.nav_settings) }
-        composable(Routes.PET_EDIT) { PlaceholderScreen(R.string.pets_add) }
+        composable(Routes.PET_EDIT) {
+            PetEditScreen(
+                onBack = back,
+                onSaved = { id, isNew ->
+                    if (isNew) {
+                        navController.navigate(Routes.petProfile(id)) {
+                            popUpTo(Routes.PET_EDIT) { inclusive = true }
+                        }
+                    } else {
+                        back()
+                    }
+                },
+                onDeleted = { navController.popBackStack(Routes.PETS, inclusive = false) },
+            )
+        }
         composable(Routes.PET_PROFILE) { PlaceholderScreen(R.string.pets_title) }
     }
 }
