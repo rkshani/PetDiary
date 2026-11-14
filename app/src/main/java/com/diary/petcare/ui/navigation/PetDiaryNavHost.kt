@@ -7,6 +7,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.diary.petcare.R
+import com.diary.petcare.ui.backup.BackupScreen
 import com.diary.petcare.ui.components.PlaceholderScreen
 import com.diary.petcare.ui.expenses.ExpenseEditScreen
 import com.diary.petcare.ui.feeding.FeedingHistoryScreen
@@ -98,6 +99,7 @@ fun PetDiaryNavHost(
         composable(Routes.NOTE_EDIT) { NoteEditScreen(onBack = back) }
         composable(Routes.TIMELINE) { TimelineScreen(onBack = back) }
         composable(Routes.HEALTH_REPORT) { HealthReportScreen(onBack = back) }
+        composable(Routes.BACKUP) { BackupScreen(onBack = back) }
     }
 }
 

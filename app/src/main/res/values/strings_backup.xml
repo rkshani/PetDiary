@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="backup_title">Backup &amp; restore</string>
+    <string name="backup_intro">Pet Diary works fully offline. Save a backup file to your phone, an SD card or a USB drive so your records are safe if you change phones.</string>
+    <string name="backup_create_title">Create a backup</string>
+    <string name="backup_create_message">Saves all pets, records and photos in one .zip file at a place you choose.</string>
+    <string name="backup_create">Create backup file</string>
+    <string name="backup_restore_title">Restore a backup</string>
+    <string name="backup_restore_message">Replaces everything in the app with the data from a backup file.</string>
+    <string name="backup_restore">Restore</string>
+    <string name="backup_restore_confirm_title">Replace all data?</string>
+    <string name="backup_restore_confirm_message">All current pets, records and photos will be replaced by the backup. This cannot be undone.</string>
+    <string name="backup_done">Backup saved (%1$d photos).</string>
+    <string name="backup_restored_title">Restore complete</string>
+    <string name="backup_restored_message">The app will restart to load your restored data.</string>
+    <string name="backup_restart">Restart now</string>
+    <string name="backup_error_write">Could not save the backup file. Try another location.</string>
+    <string name="backup_error_read">Could not read the backup file.</string>
+    <string name="backup_error_not_backup">This file is not a Pet Diary backup.</string>
+    <string name="backup_error_newer">This backup was made by a newer version of Pet Diary. Please update the app first.</string>
+</resources>
