@@ -7,4 +7,7 @@
     <string name="expense_edit">Edit expense</string>
     <string name="expense_amount">Amount</string>
     <string name="expense_category">Category</string>
+    <string name="summary_prev_month">Previous month</string>
+    <string name="summary_next_month">Next month</string>
+    <string name="summary_last_month">Month before: %1$s</string>
 </resources>
