@@ -16,6 +16,7 @@ import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.currentBackStackEntryAsState
 import androidx.navigation.compose.rememberNavController
+import com.diary.petcare.ui.reminders.AskNotificationPermissionOnce
 
 /** Root UI: bottom bar for the four top-level screens plus the nav host. */
 @Composable
@@ -26,6 +27,7 @@ fun PetDiaryAppUi(
     val backStack by navController.currentBackStackEntryAsState()
     val currentDestination = backStack?.destination
     val showBottomBar = TopLevelDestination.entries.any { it.route == currentDestination?.route }
+    AskNotificationPermissionOnce()
 
     Scaffold(
         bottomBar = {

@@ -23,6 +23,7 @@ import com.diary.petcare.ui.pets.PetEditScreen
 import com.diary.petcare.ui.weight.WeightEditScreen
 import com.diary.petcare.ui.pets.PetsScreen
 import com.diary.petcare.ui.profile.PetProfileScreen
+import com.diary.petcare.ui.reminders.RemindersScreen
 import com.diary.petcare.ui.profile.ProfileNav
 
 private fun NavBackStackEntry.longArg(name: String): Long =
@@ -58,7 +59,7 @@ fun PetDiaryNavHost(
                 onOpenPet = { go(Routes.petProfile(it)) },
             )
         }
-        composable(Routes.REMINDERS) { PlaceholderScreen(R.string.nav_reminders) }
+        composable(Routes.REMINDERS) { RemindersScreen(onOpenPet = { go(Routes.petProfile(it)) }) }
         composable(Routes.SETTINGS) { PlaceholderScreen(R.string.nav_settings) }
 
         composable(Routes.PET_EDIT) {

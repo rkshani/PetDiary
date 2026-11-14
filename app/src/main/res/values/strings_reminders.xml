@@ -12,4 +12,16 @@
     <string name="notif_title_custom">Reminder for %1$s 🔔</string>
     <string name="notif_done">Mark as done</string>
     <string name="notif_snooze">Snooze 15 min</string>
+    <string name="reminders_title">Reminders</string>
+    <string name="reminders_empty_title">No reminders yet</string>
+    <string name="reminders_empty_message">Reminders appear here when you add feeding times, medicine, vaccine due dates, vet visits or repeating grooming.</string>
+    <string name="reminders_today">Today</string>
+    <string name="reminders_upcoming">Upcoming</string>
+    <string name="reminders_off">Turned off</string>
+    <string name="reminders_daily_at">Every day at %1$s</string>
+    <string name="reminders_marked_done">Marked as done</string>
+    <string name="reminders_snoozed">Snoozed for 15 minutes</string>
+    <string name="reminders_permission_title">Turn on notifications</string>
+    <string name="reminders_permission_message">Pet Diary needs notification access to remind you about meals, medicine and vaccines.</string>
+    <string name="reminders_permission_allow">Allow notifications</string>
 </resources>
