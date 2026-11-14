@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gallery_title">Photos</string>
+    <string name="gallery_empty_title">No photos yet</string>
+    <string name="gallery_empty_message">Keep your favourite moments here. Photos stay private on this phone.</string>
+    <string name="gallery_caption">Caption</string>
+    <string name="gallery_delete_message">Delete this photo?</string>
+</resources>

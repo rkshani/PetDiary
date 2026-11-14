@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="gallery_title">تصاویر</string>
+    <string name="gallery_empty_title">ابھی کوئی تصویر نہیں</string>
+    <string name="gallery_empty_message">اپنے پسندیدہ لمحات یہاں رکھیں۔ تصاویر اسی فون میں محفوظ رہتی ہیں۔</string>
+    <string name="gallery_caption">عنوان</string>
+    <string name="gallery_delete_message">یہ تصویر حذف کریں؟</string>
+</resources>
