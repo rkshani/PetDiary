@@ -6,4 +6,6 @@
     <string name="weight_add">وزن شامل کریں</string>
     <string name="weight_edit">وزن میں ترمیم</string>
     <string name="weight_value">وزن</string>
+    <string name="weight_chart_title">بڑھوتری کا چارٹ</string>
+    <string name="weight_chart_summary">وزن %1$s سے %2$s ہو گیا</string>
 </resources>

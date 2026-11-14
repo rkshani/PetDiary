@@ -6,4 +6,6 @@
     <string name="weight_add">Add weight</string>
     <string name="weight_edit">Edit weight</string>
     <string name="weight_value">Weight</string>
+    <string name="weight_chart_title">Growth chart</string>
+    <string name="weight_chart_summary">Weight went from %1$s to %2$s</string>
 </resources>
