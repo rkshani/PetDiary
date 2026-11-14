@@ -84,10 +84,10 @@ fun TimelineScreen(onBack: () -> Unit, viewModel: TimelineViewModel = hiltViewMo
             else -> {
                 val byMonth = list.groupBy { DateTimeUtils.startOfMonth(it.date) }
                 LazyColumn(Modifier.fillMaxSize().padding(padding), contentPadding = PaddingValues(bottom = 24.dp)) {
-                    byMonth.forEach { (month, items) ->
+                    byMonth.forEach { (month, monthItems) ->
                         item(key = "m$month") { SectionHeader(Formatters.monthYear(month)) }
-                        items(items, key = { "${it.kind}_${it.refId}_${it.date}" }) { e ->
-                            TimelineRow(e, isLast = e == items.last())
+                        items(monthItems, key = { "${it.kind}_${it.refId}_${it.date}" }) { e ->
+                            TimelineRow(e, isLast = e == monthItems.last())
                         }
                     }
                 }
