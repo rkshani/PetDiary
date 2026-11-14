@@ -13,4 +13,11 @@
     <string name="feeding_log_extra">Log a meal</string>
     <string name="feeding_history">History</string>
     <string name="feeding_extra_today">Other meals today</string>
+    <string name="feeding_history_title">Feeding history</string>
+    <string name="feeding_history_empty">No meals logged yet</string>
+    <string name="feeding_meal">Meal</string>
+    <plurals name="feeding_meals">
+        <item quantity="one">%d meal</item>
+        <item quantity="other">%d meals</item>
+    </plurals>
 </resources>

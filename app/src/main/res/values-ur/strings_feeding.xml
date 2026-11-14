@@ -13,4 +13,11 @@
     <string name="feeding_log_extra">کھانا درج کریں</string>
     <string name="feeding_history">تاریخچہ</string>
     <string name="feeding_extra_today">آج کے دیگر کھانے</string>
+    <string name="feeding_history_title">کھانے کا تاریخچہ</string>
+    <string name="feeding_history_empty">ابھی کوئی کھانا درج نہیں</string>
+    <string name="feeding_meal">کھانا</string>
+    <plurals name="feeding_meals">
+        <item quantity="one">%d کھانا</item>
+        <item quantity="other">%d کھانے</item>
+    </plurals>
 </resources>
