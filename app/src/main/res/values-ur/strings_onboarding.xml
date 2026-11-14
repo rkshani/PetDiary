@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="onboarding_1_title">پالتو جانور کی ساری دیکھ بھال ایک ڈائری میں</string>
+    <string name="onboarding_1_message">بلی، کتا، پرندے، مرغی، خرگوش، مچھلی اور دیگر کے لیے کھانا، ویکسین، دوا، ڈاکٹر کے دورے، وزن، صفائی اور اخراجات۔</string>
+    <string name="onboarding_2_title">کھانا یا ویکسین کبھی نہ بھولیں</string>
+    <string name="onboarding_2_message">نرم یاد دہانیاں پائیں۔ اطلاع سے ہی "ہو گیا" یا "بعد میں" کریں۔</string>
+    <string name="onboarding_3_title">نجی اور مکمل آف لائن</string>
+    <string name="onboarding_3_message">نہ اکاؤنٹ، نہ انٹرنیٹ۔ سب کچھ آپ کے فون میں رہتا ہے، اور آپ اپنی بیک اپ فائل بنا سکتے ہیں۔</string>
+    <string name="onboarding_start">شروع کریں</string>
+</resources>
