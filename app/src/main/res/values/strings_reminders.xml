@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="channel_feeding">Feeding reminders</string>
+    <string name="channel_medicine">Medicine reminders</string>
+    <string name="channel_health">Vaccine and vet reminders</string>
+    <string name="channel_grooming">Grooming reminders</string>
+    <string name="notif_title_feeding">Time to feed %1$s 🍽️</string>
+    <string name="notif_title_medicine">Medicine for %1$s 💊</string>
+    <string name="notif_title_vaccine">Vaccine due for %1$s 💉</string>
+    <string name="notif_title_vet">Vet visit for %1$s 🩺</string>
+    <string name="notif_title_grooming">Grooming due for %1$s 🛁</string>
+    <string name="notif_title_custom">Reminder for %1$s 🔔</string>
+    <string name="notif_done">Mark as done</string>
+    <string name="notif_snooze">Snooze 15 min</string>
+</resources>
