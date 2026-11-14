@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="expenses_title">اخراجات</string>
+    <string name="expenses_empty_title">ابھی کوئی خرچ نہیں</string>
+    <string name="expenses_empty_message">خوراک، ڈاکٹر، کھلونے وغیرہ کا خرچ لکھیں اور ہر مہینے کا کل خرچ دیکھیں۔</string>
+    <string name="expense_add">خرچ شامل کریں</string>
+    <string name="expense_edit">خرچ میں ترمیم</string>
+    <string name="expense_amount">رقم</string>
+    <string name="expense_category">زمرہ</string>
+</resources>

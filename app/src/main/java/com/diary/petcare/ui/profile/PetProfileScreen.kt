@@ -127,6 +127,7 @@ private fun ProfileTabContent(tab: ProfileTab, pet: Pet, nav: ProfileNav) {
         ProfileTab.HEALTH -> com.diary.petcare.ui.health.HealthTab(nav)
         ProfileTab.FOOD -> com.diary.petcare.ui.feeding.FoodTab(nav)
         ProfileTab.WEIGHT -> com.diary.petcare.ui.weight.WeightTab(nav)
+        ProfileTab.EXPENSES -> com.diary.petcare.ui.expenses.ExpensesTab(nav)
         else -> com.diary.petcare.ui.components.PlaceholderScreen(tab.title)
     }
 }

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="expenses_title">Expenses</string>
+    <string name="expenses_empty_title">No expenses yet</string>
+    <string name="expenses_empty_message">Track food, vet bills, toys and more to see what your pet costs each month.</string>
+    <string name="expense_add">Add expense</string>
+    <string name="expense_edit">Edit expense</string>
+    <string name="expense_amount">Amount</string>
+    <string name="expense_category">Category</string>
+</resources>
