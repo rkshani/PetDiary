@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<paths>
+    <!-- Camera writes here before the photo is copied into private storage. -->
+    <cache-path name="camera" path="camera/" />
+    <!-- Health report PDFs to share with the vet. -->
+    <cache-path name="reports" path="reports/" />
+</paths>

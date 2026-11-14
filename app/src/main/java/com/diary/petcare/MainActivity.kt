@@ -7,7 +7,10 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
 import androidx.compose.foundation.isSystemInDarkTheme
+import androidx.compose.runtime.CompositionLocalProvider
 import androidx.compose.runtime.getValue
+import com.diary.petcare.domain.model.AppSettings
+import com.diary.petcare.ui.format.LocalAppSettings
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import com.diary.petcare.data.settings.LocaleStore
 import com.diary.petcare.domain.model.ThemeMode
@@ -35,7 +38,9 @@ class MainActivity : ComponentActivity() {
                 ThemeMode.DARK -> true
             }
             PetDiaryTheme(darkTheme = dark) {
-                PetDiaryAppUi()
+                CompositionLocalProvider(LocalAppSettings provides (settings ?: AppSettings())) {
+                    PetDiaryAppUi()
+                }
             }
         }
     }

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Actions -->
+    <string name="action_back">Back</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_add">Add</string>
+    <string name="action_ok">OK</string>
+    <string name="action_clear">Clear</string>
+    <string name="action_done">Done</string>
+    <string name="action_next">Next</string>
+    <string name="action_skip">Skip</string>
+    <string name="action_share">Share</string>
+    <string name="action_see_all">See all</string>
+    <string name="delete_title">Delete?</string>
+    <string name="delete_message_generic">This entry will be deleted. This cannot be undone.</string>
+    <string name="error_required">Required</string>
+    <string name="error_invalid_number">Enter a valid number</string>
+    <string name="saved">Saved</string>
+    <string name="today">Today</string>
+    <string name="tomorrow">Tomorrow</string>
+    <string name="yesterday">Yesterday</string>
+    <string name="overdue">Overdue</string>
+    <string name="in_days">In %d days</string>
+    <string name="days_ago">%d days ago</string>
+    <string name="notes">Notes</string>
+    <string name="date">Date</string>
+    <string name="optional">Optional</string>
+    <string name="remind_me">Remind me</string>
+
+    <!-- Photos -->
+    <string name="photo_from_gallery">Choose from gallery</string>
+    <string name="photo_from_camera">Take a photo</string>
+    <string name="photo_remove">Remove photo</string>
+    <string name="photo_add">Add photo</string>
+
+    <!-- Pet types -->
+    <string name="pet_type_cat">Cat</string>
+    <string name="pet_type_dog">Dog</string>
+    <string name="pet_type_bird">Bird</string>
+    <string name="pet_type_parrot">Parrot</string>
+    <string name="pet_type_hen">Hen</string>
+    <string name="pet_type_rabbit">Rabbit</string>
+    <string name="pet_type_fish">Fish</string>
+    <string name="pet_type_hamster">Hamster</string>
+    <string name="pet_type_turtle">Turtle</string>
+    <string name="pet_type_goat">Goat</string>
+    <string name="pet_type_cow">Cow</string>
+    <string name="pet_type_horse">Horse</string>
+    <string name="pet_type_other">Other</string>
+
+    <!-- Gender -->
+    <string name="gender_male">Male</string>
+    <string name="gender_female">Female</string>
+    <string name="gender_unknown">Not sure</string>
+
+    <!-- Medicine kinds -->
+    <string name="medicine_kind_medicine">Medicine</string>
+    <string name="medicine_kind_deworming">Deworming</string>
+    <string name="medicine_kind_flea_tick">Flea / tick</string>
+    <string name="medicine_kind_supplement">Supplement</string>
+
+    <!-- Grooming -->
+    <string name="grooming_bath">Bath</string>
+    <string name="grooming_nail_cut">Nail cut</string>
+    <string name="grooming_haircut">Haircut</string>
+    <string name="grooming_brushing">Brushing</string>
+    <string name="grooming_teeth">Teeth cleaning</string>
+    <string name="grooming_ear_clean">Ear cleaning</string>
+    <string name="grooming_other">Other</string>
+
+    <!-- Expense categories -->
+    <string name="expense_food">Food</string>
+    <string name="expense_vet">Vet</string>
+    <string name="expense_medicine">Medicine</string>
+    <string name="expense_toys">Toys</string>
+    <string name="expense_grooming">Grooming</string>
+    <string name="expense_accessories">Accessories</string>
+    <string name="expense_other">Other</string>
+
+    <!-- Reminder types -->
+    <string name="reminder_type_feeding">Feeding</string>
+    <string name="reminder_type_medicine">Medicine</string>
+    <string name="reminder_type_vaccine">Vaccine</string>
+    <string name="reminder_type_vet">Vet visit</string>
+    <string name="reminder_type_grooming">Grooming</string>
+    <string name="reminder_type_custom">Reminder</string>
+
+    <!-- Settings values -->
+    <string name="theme_system">System default</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="language_system">System default</string>
+    <string name="language_english">English</string>
+    <string name="language_urdu">اردو (Urdu)</string>
+    <string name="unit_kg">Kilograms (kg)</string>
+    <string name="unit_lb">Pounds (lb)</string>
+    <string name="currency_pkr">Pakistani Rupee (Rs)</string>
+    <string name="currency_usd">US Dollar ($)</string>
+    <string name="currency_inr">Indian Rupee (₹)</string>
+    <string name="currency_aed">UAE Dirham (AED)</string>
+    <string name="currency_sar">Saudi Riyal (SAR)</string>
+    <string name="currency_gbp">British Pound (£)</string>
+    <string name="currency_eur">Euro (€)</string>
+</resources>
