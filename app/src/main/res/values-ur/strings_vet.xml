@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vet_title">ڈاکٹر کے دورے</string>
+    <string name="vet_empty">ابھی کوئی دورہ درج نہیں۔</string>
+    <string name="vet_add">دورہ شامل کریں</string>
+    <string name="vet_edit">دورے میں ترمیم</string>
+    <string name="vet_date">دورے کی تاریخ</string>
+    <string name="vet_reason">دورے کی وجہ</string>
+    <string name="vet_name">ڈاکٹر کا نام</string>
+    <string name="vet_clinic">کلینک</string>
+    <string name="vet_diagnosis">تشخیص کے نوٹس</string>
+    <string name="vet_prescription_photo">نسخے کی تصویر</string>
+    <string name="vet_cost">خرچ</string>
+    <string name="vet_next_visit">اگلے دورے کی تاریخ</string>
+    <string name="vet_next_on">اگلا: %1$s</string>
+</resources>
