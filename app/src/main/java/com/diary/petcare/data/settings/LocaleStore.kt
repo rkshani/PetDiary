@@ -2,6 +2,7 @@ package com.diary.petcare.data.settings
 
 import android.content.Context
 import android.content.res.Configuration
+import com.diary.petcare.core.FeatureFlags
 import com.diary.petcare.domain.model.AppLanguage
 import java.util.Locale
 
@@ -25,7 +26,8 @@ object LocaleStore {
 
     /** Returns a context that uses the saved language (or the base one for "system"). */
     fun wrap(base: Context): Context {
-        val tag = load(base).tag ?: return base
+        // v1 is English only, whatever the phone language is (also keeps the layout left-to-right).
+        val tag = if (FeatureFlags.LANGUAGE_PICKER) load(base).tag ?: return base else "en"
         val locale = Locale.forLanguageTag(tag)
         Locale.setDefault(locale)
         val config = Configuration(base.resources.configuration)

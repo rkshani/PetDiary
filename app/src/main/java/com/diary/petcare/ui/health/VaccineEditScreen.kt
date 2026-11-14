@@ -1,5 +1,6 @@
 package com.diary.petcare.ui.health
 
+import com.diary.petcare.core.FeatureFlags
 import android.net.Uri
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
@@ -183,9 +184,11 @@ fun VaccineEditScreen(onBack: () -> Unit, viewModel: VaccineEditViewModel = hilt
             onValueChange = { v -> viewModel.update { it.copy(nextDueDate = v) } },
             allowClear = true,
         )
-        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-            Text(stringResource(R.string.remind_me), Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
-            Switch(checked = form.reminder, onCheckedChange = { v -> viewModel.update { it.copy(reminder = v) } })
+        if (FeatureFlags.REMINDERS) {
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                Text(stringResource(R.string.remind_me), Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+                Switch(checked = form.reminder, onCheckedChange = { v -> viewModel.update { it.copy(reminder = v) } })
+            }
         }
         FormTextField(
             value = form.vetName,

@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Pet Diary is FULLY OFFLINE. Never add the INTERNET permission. -->
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<!-- Version 1 asks for no permissions. The lines below strip any that a library adds. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- Reminder notifications (asked at runtime on Android 13+). -->
-    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <!-- v2: reminder notifications need POST_NOTIFICATIONS (see app/src/v2/README.md). -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" tools:node="remove" />
+    <uses-permission android:name="android.permission.INTERNET" tools:node="remove" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" tools:node="remove" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" tools:node="remove" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" tools:node="remove" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" tools:node="remove" />
+    <uses-permission android:name="${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" tools:node="remove" />
+    <permission android:name="${applicationId}.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" tools:node="remove" />
 
     <application
         android:name=".PetDiaryApp"
@@ -25,9 +34,7 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".data.reminder.ReminderActionReceiver"
-            android:exported="false" />
+        <!-- v2: <receiver android:name=".data.reminder.ReminderActionReceiver" android:exported="false" /> -->
 
         <provider
             android:name="androidx.core.content.FileProvider"

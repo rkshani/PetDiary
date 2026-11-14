@@ -1,5 +1,6 @@
 package com.diary.petcare.ui.feeding
 
+import com.diary.petcare.core.FeatureFlags
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -117,7 +118,7 @@ private fun ScheduleCard(row: ScheduleRow, onClick: () -> Unit, onFed: () -> Uni
             Column(Modifier.weight(1f)) {
                 Row(verticalAlignment = Alignment.CenterVertically) {
                     Text(Formatters.timeOfDay(s.timeOfDay), style = MaterialTheme.typography.titleMedium)
-                    if (s.reminderEnabled) {
+                    if (FeatureFlags.REMINDERS && s.reminderEnabled) {
                         Spacer(Modifier.width(6.dp))
                         Icon(
                             Icons.Outlined.NotificationsActive,

@@ -1,8 +1,11 @@
 package com.diary.petcare
 
 import android.content.Context
+import android.graphics.Color
 import android.os.Bundle
 import androidx.activity.ComponentActivity
+import androidx.activity.SystemBarStyle
+import com.diary.petcare.core.FeatureFlags
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.viewModels
@@ -44,23 +47,31 @@ class MainActivity : ComponentActivity() {
         // Keep the splash until settings (theme, onboarding, lock) are read.
         installSplashScreen().setKeepOnScreenCondition { viewModel.settings.value == null }
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
+        if (FeatureFlags.DARK_MODE) {
+            enableEdgeToEdge()
+        } else {
+            // v1 is light only: dark status/nav bar icons even when the phone is in dark mode.
+            val light = SystemBarStyle.light(Color.TRANSPARENT, Color.TRANSPARENT)
+            enableEdgeToEdge(statusBarStyle = light, navigationBarStyle = light)
+        }
         setContent {
             val settings by viewModel.settings.collectAsStateWithLifecycle()
             val loaded = settings ?: return@setContent // wait for the first read; the splash covers this
-            val dark = when (loaded.themeMode) {
-                ThemeMode.SYSTEM -> isSystemInDarkTheme()
-                ThemeMode.LIGHT -> false
-                ThemeMode.DARK -> true
+            val dark = when {
+                !FeatureFlags.DARK_MODE -> false
+                loaded.themeMode == ThemeMode.SYSTEM -> isSystemInDarkTheme()
+                else -> loaded.themeMode == ThemeMode.DARK
             }
             PetDiaryTheme(darkTheme = dark) {
                 CompositionLocalProvider(LocalAppSettings provides loaded) {
                     val unlocked by viewModel.unlocked.collectAsStateWithLifecycle()
-                    if (loaded.lockEnabled && !unlocked) {
+                    if (FeatureFlags.APP_LOCK && loaded.lockEnabled && !unlocked) {
                         LockScreen(checkPin = viewModel::checkPin, onUnlocked = viewModel::onUnlocked)
                     } else {
                         // Decided once per launch so finishing onboarding does not rebuild the graph.
-                        val start = remember { if (loaded.onboardingDone) Routes.HOME else Routes.ONBOARDING }
+                        val start = remember {
+                            if (!FeatureFlags.ONBOARDING || loaded.onboardingDone) Routes.HOME else Routes.ONBOARDING
+                        }
                         PetDiaryAppUi(startDestination = start)
                     }
                 }

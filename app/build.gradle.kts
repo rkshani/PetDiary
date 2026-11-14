@@ -60,9 +60,14 @@ android {
     }
 
     androidResources {
-        // The app ships English and Urdu only.
-        localeFilters += listOf("en", "ur")
+        // v1 ships English only. Urdu strings stay in values-ur; add "ur" back for v2.
+        localeFilters += listOf("en")
     }
+
+    // v2: reminder notifications live in src/v2/java and are not compiled in v1.
+    // Un-comment this (and the work-runtime-ktx dependency) to bring them back.
+    // See app/src/v2/README.md.
+    // sourceSets["main"].java.srcDir("src/v2/java")
 
     buildFeatures {
         compose = true
@@ -107,7 +112,8 @@ dependencies {
     implementation(libs.androidx.room.ktx)
     ksp(libs.androidx.room.compiler)
     implementation(libs.androidx.datastore.preferences)
-    implementation(libs.androidx.work.runtime.ktx)
+    // v2: reminder notifications (WorkManager). Left out of v1 so it adds no permissions.
+    // implementation(libs.androidx.work.runtime.ktx)
     implementation(libs.coil.compose)
 
     testImplementation(libs.junit)
