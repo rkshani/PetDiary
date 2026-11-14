@@ -70,13 +70,13 @@ fun ExpensesTab(nav: ProfileNav, viewModel: ExpensesTabViewModel = hiltViewModel
                 )
             }
         }
-        byMonth.forEach { (month, items) ->
+        byMonth.forEach { (month, monthItems) ->
             item(key = "m$month") {
                 SectionHeader(
-                    "${Formatters.monthYear(month)} · ${Formatters.money(items.sumOf { it.amountPaisa }, currency)}",
+                    "${Formatters.monthYear(month)} · ${Formatters.money(monthItems.sumOf { it.amountPaisa }, currency)}",
                 )
             }
-            items(items, key = { it.id }) { e ->
+            items(monthItems, key = { it.id }) { e ->
                 RecordCard(
                     emoji = e.category.emoji,
                     color = EventColors.Expense,
