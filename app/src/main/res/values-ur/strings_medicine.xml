@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="medicines_title">ادویات اور کیڑے مار دوا</string>
+    <string name="medicines_empty">ابھی کوئی دوا کا کورس نہیں۔</string>
+    <string name="medicine_add">دوا شامل کریں</string>
+    <string name="medicine_edit">دوا میں ترمیم</string>
+    <string name="medicine_name">دوا کا نام</string>
+    <string name="medicine_kind">قسم</string>
+    <string name="medicine_dose">خوراک</string>
+    <string name="medicine_dose_hint">مثلاً: 1 گولی، 2 ملی لیٹر، آدھی گولی</string>
+    <string name="medicine_times">روزانہ اوقات</string>
+    <string name="medicine_times_per_day">دن میں %d بار</string>
+    <string name="medicine_add_time">وقت شامل کریں</string>
+    <string name="medicine_start">شروع کی تاریخ</string>
+    <string name="medicine_end">ختم کی تاریخ</string>
+    <string name="medicine_no_end">ختم کی تاریخ نہیں: کورس تب تک چلے گا جب تک آپ تاریخ نہ لگائیں۔</string>
+    <string name="medicine_end_before_start">ختم کی تاریخ شروع کی تاریخ سے پہلے نہیں ہو سکتی</string>
+    <string name="medicine_active">جاری</string>
+    <string name="medicine_finished">مکمل</string>
+</resources>
