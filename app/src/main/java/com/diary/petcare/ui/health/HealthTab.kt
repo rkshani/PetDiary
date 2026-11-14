@@ -17,6 +17,7 @@ fun HealthTab(nav: ProfileNav) {
         TodayDosesSection()
         VaccinesSection(nav)
         MedicinesSection(nav)
+        VetVisitsSection(nav)
         // HEALTH_SECTIONS
     }
 }
