@@ -104,7 +104,8 @@ class VaccineEditViewModel @Inject constructor(
                 it.copy(
                     name = name,
                     nameError = false,
-                    nextDueDate = it.nextDueDate ?: preset?.let { p -> DateTimeUtils.addMonths(base, p.repeatMonths) },
+                    nextDueDate = it.nextDueDate
+                        ?: preset?.takeIf { p -> p.repeatMonths > 0 }?.let { p -> DateTimeUtils.addMonths(base, p.repeatMonths) },
                 )
             }
         }
