@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="vaccines_title">Vaccines</string>
+    <string name="vaccines_presets">Ready-made list</string>
+    <string name="vaccines_empty">No vaccines recorded yet.</string>
+    <string name="vaccine_add">Add vaccine</string>
+    <string name="vaccine_edit">Edit vaccine</string>
+    <string name="vaccine_name">Vaccine name</string>
+    <string name="vaccine_date_given">Date given</string>
+    <string name="vaccine_next_due">Next due date</string>
+    <string name="vaccine_vet">Vet / clinic</string>
+    <string name="vaccine_card_photo">Vaccine card photo</string>
+    <string name="vaccine_given_on">Given: %1$s</string>
+    <string name="vaccine_next_on">Next: %1$s</string>
+</resources>
