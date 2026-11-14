@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="grooming_title">Grooming</string>
+    <string name="grooming_empty">No grooming logged yet.</string>
+    <string name="grooming_add">Log grooming</string>
+    <string name="grooming_edit">Edit grooming</string>
+    <string name="grooming_what">What was done?</string>
+    <string name="grooming_repeat">Repeat</string>
+    <string name="grooming_no_repeat">No repeat</string>
+    <string name="grooming_repeat_days">Repeat every (days)</string>
+    <string name="grooming_next_due">Next due: %1$s</string>
+    <plurals name="grooming_every_days">
+        <item quantity="one">Every %d day</item>
+        <item quantity="other">Every %d days</item>
+    </plurals>
+</resources>

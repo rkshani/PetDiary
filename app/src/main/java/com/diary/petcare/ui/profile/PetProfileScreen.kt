@@ -120,7 +120,10 @@ fun PetProfileScreen(
 @Composable
 private fun ProfileTabContent(tab: ProfileTab, pet: Pet, nav: ProfileNav) {
     when (tab) {
-        ProfileTab.OVERVIEW -> OverviewTab(pet, nav)
+        ProfileTab.OVERVIEW -> OverviewTab(pet, nav) {
+            com.diary.petcare.ui.grooming.GroomingSection(nav)
+            // OVERVIEW_SECTIONS
+        }
         ProfileTab.HEALTH -> com.diary.petcare.ui.health.HealthTab(nav)
         ProfileTab.FOOD -> com.diary.petcare.ui.feeding.FoodTab(nav)
         ProfileTab.WEIGHT -> com.diary.petcare.ui.weight.WeightTab(nav)
