@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="grooming_title">صفائی ستھرائی</string>
+    <string name="grooming_empty">ابھی کچھ درج نہیں۔</string>
+    <string name="grooming_add">صفائی درج کریں</string>
+    <string name="grooming_edit">صفائی میں ترمیم</string>
+    <string name="grooming_what">کیا کیا گیا؟</string>
+    <string name="grooming_repeat">دہرائیں</string>
+    <string name="grooming_no_repeat">نہ دہرائیں</string>
+    <string name="grooming_repeat_days">ہر (دن) بعد دہرائیں</string>
+    <string name="grooming_next_due">اگلی باری: %1$s</string>
+    <plurals name="grooming_every_days">
+        <item quantity="one">ہر %d دن</item>
+        <item quantity="other">ہر %d دن</item>
+    </plurals>
+</resources>
