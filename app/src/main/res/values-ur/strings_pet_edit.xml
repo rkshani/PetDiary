@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pet_edit_title">پالتو جانور میں ترمیم</string>
+    <string name="pet_name">نام</string>
+    <string name="pet_type">قسم</string>
+    <string name="pet_breed">نسل</string>
+    <string name="pet_gender">جنس</string>
+    <string name="pet_birthday">تاریخ پیدائش</string>
+    <string name="pet_age_hint">تاریخ پیدائش معلوم نہیں؟ اندازاً عمر لکھ دیں۔</string>
+    <string name="pet_age_years">عمر (سال)</string>
+    <string name="pet_age_months">عمر (مہینے)</string>
+    <string name="pet_color">رنگ</string>
+    <string name="pet_microchip">مائیکروچپ نمبر</string>
+    <string name="pet_delete_message">%1$s اور اس کے تمام ریکارڈ حذف کریں؟ اسے واپس نہیں لایا جا سکتا۔</string>
+</resources>
