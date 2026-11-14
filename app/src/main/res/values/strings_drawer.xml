@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="drawer_open_menu">Open menu</string>
+    <string name="drawer_tagline">Your pet care log</string>
+    <string name="drawer_rate_us">Rate us</string>
+    <string name="drawer_privacy_policy">Privacy policy</string>
+    <string name="drawer_exit">Exit</string>
+    <string name="drawer_no_browser">No app found to open this link</string>
+</resources>

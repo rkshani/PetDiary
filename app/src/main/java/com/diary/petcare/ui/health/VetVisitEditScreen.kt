@@ -1,5 +1,6 @@
 package com.diary.petcare.ui.health
 
+import com.diary.petcare.core.FeatureFlags
 import android.net.Uri
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
@@ -181,9 +182,11 @@ fun VetVisitEditScreen(onBack: () -> Unit, viewModel: VetVisitEditViewModel = hi
             onValueChange = { v -> viewModel.update { it.copy(nextVisit = v) } },
             allowClear = true,
         )
-        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-            Text(stringResource(R.string.remind_me), Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
-            Switch(checked = form.reminder, onCheckedChange = { v -> viewModel.update { it.copy(reminder = v) } })
+        if (FeatureFlags.REMINDERS) {
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                Text(stringResource(R.string.remind_me), Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+                Switch(checked = form.reminder, onCheckedChange = { v -> viewModel.update { it.copy(reminder = v) } })
+            }
         }
     }
 }

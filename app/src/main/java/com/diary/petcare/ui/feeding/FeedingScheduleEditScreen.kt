@@ -1,5 +1,6 @@
 package com.diary.petcare.ui.feeding
 
+import com.diary.petcare.core.FeatureFlags
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.material3.MaterialTheme
@@ -111,9 +112,11 @@ fun FeedingScheduleEditScreen(onBack: () -> Unit, viewModel: FeedingScheduleEdit
             label = stringResource(R.string.feeding_quantity),
             supportingText = stringResource(R.string.feeding_quantity_hint),
         )
-        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-            Text(stringResource(R.string.remind_me), Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
-            Switch(checked = form.reminder, onCheckedChange = { v -> viewModel.update { it.copy(reminder = v) } })
+        if (FeatureFlags.REMINDERS) {
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                Text(stringResource(R.string.remind_me), Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+                Switch(checked = form.reminder, onCheckedChange = { v -> viewModel.update { it.copy(reminder = v) } })
+            }
         }
     }
 }

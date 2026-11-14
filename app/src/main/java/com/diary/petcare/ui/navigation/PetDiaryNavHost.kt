@@ -24,7 +24,6 @@ import com.diary.petcare.ui.pets.PetEditScreen
 import com.diary.petcare.ui.weight.WeightEditScreen
 import com.diary.petcare.ui.pets.PetsScreen
 import com.diary.petcare.ui.profile.PetProfileScreen
-import com.diary.petcare.ui.reminders.RemindersScreen
 import com.diary.petcare.ui.report.HealthReportScreen
 import com.diary.petcare.ui.settings.SettingsScreen
 import com.diary.petcare.ui.timeline.TimelineScreen
@@ -38,6 +37,7 @@ fun PetDiaryNavHost(
     navController: NavHostController,
     modifier: Modifier = Modifier,
     startDestination: String = Routes.HOME,
+    onOpenDrawer: () -> Unit = {},
 ) {
     val back: () -> Unit = { navController.popBackStack() }
     val go: (String) -> Unit = { navController.navigate(it) }
@@ -54,6 +54,7 @@ fun PetDiaryNavHost(
                     openVaccine = { petId, id -> go(Routes.vaccineEdit(petId, id)) },
                     openVetVisit = { petId, id -> go(Routes.vetVisitEdit(petId, id)) },
                     openGrooming = { petId, id -> go(Routes.groomingEdit(petId, id)) },
+                    openDrawer = onOpenDrawer,
                 ),
             )
         }
@@ -63,7 +64,7 @@ fun PetDiaryNavHost(
                 onOpenPet = { go(Routes.petProfile(it)) },
             )
         }
-        composable(Routes.REMINDERS) { RemindersScreen(onOpenPet = { go(Routes.petProfile(it)) }) }
+        // v2: composable(Routes.REMINDERS) { RemindersScreen(onOpenPet = { go(Routes.petProfile(it)) }) }
         composable(Routes.SETTINGS) {
             SettingsScreen(onBackup = { go(Routes.BACKUP) }, onSetPin = { go(Routes.PIN_SETUP) })
         }

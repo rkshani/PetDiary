@@ -47,6 +47,7 @@ import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import androidx.lifecycle.viewModelScope
 import com.diary.petcare.BuildConfig
 import com.diary.petcare.R
+import com.diary.petcare.core.FeatureFlags
 import com.diary.petcare.domain.model.AppLanguage
 import com.diary.petcare.domain.model.AppSettings
 import com.diary.petcare.domain.model.Currency
@@ -96,11 +97,15 @@ fun SettingsScreen(
     Scaffold(topBar = { PetTopBar(stringResource(R.string.settings_title)) }) { padding ->
         Column(Modifier.fillMaxSize().padding(padding).verticalScroll(rememberScrollState())) {
             SectionHeader(stringResource(R.string.settings_general))
-            SettingRow(Icons.Outlined.Language, stringResource(R.string.settings_language), stringResource(s.language.label)) {
-                picker = Picker.LANGUAGE
+            if (FeatureFlags.LANGUAGE_PICKER) {
+                SettingRow(Icons.Outlined.Language, stringResource(R.string.settings_language), stringResource(s.language.label)) {
+                    picker = Picker.LANGUAGE
+                }
             }
-            SettingRow(Icons.Outlined.DarkMode, stringResource(R.string.settings_theme), stringResource(s.themeMode.label)) {
-                picker = Picker.THEME
+            if (FeatureFlags.DARK_MODE) {
+                SettingRow(Icons.Outlined.DarkMode, stringResource(R.string.settings_theme), stringResource(s.themeMode.label)) {
+                    picker = Picker.THEME
+                }
             }
             SettingRow(Icons.Outlined.Scale, stringResource(R.string.settings_weight_unit), stringResource(s.weightUnit.label)) {
                 picker = Picker.UNIT
@@ -109,8 +114,10 @@ fun SettingsScreen(
                 picker = Picker.CURRENCY
             }
 
-            SectionHeader(stringResource(R.string.settings_security))
-            LockSettings(lockEnabled = s.lockEnabled, onSetPin = onSetPin, onDisable = { viewModel.disableLock() })
+            if (FeatureFlags.APP_LOCK) {
+                SectionHeader(stringResource(R.string.settings_security))
+                LockSettings(lockEnabled = s.lockEnabled, onSetPin = onSetPin, onDisable = { viewModel.disableLock() })
+            }
 
             SectionHeader(stringResource(R.string.settings_data))
             SettingRow(Icons.Outlined.Backup, stringResource(R.string.backup_title), stringResource(R.string.settings_backup_hint), onBackup)

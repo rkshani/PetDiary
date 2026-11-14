@@ -16,10 +16,13 @@ import androidx.compose.foundation.lazy.LazyRow
 import androidx.compose.foundation.lazy.items
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Check
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.material3.Card
 import androidx.compose.material3.CardDefaults
 import androidx.compose.material3.FilledTonalButton
 import androidx.compose.material3.Icon
+import androidx.compose.material3.IconButton
+import androidx.compose.material3.TopAppBar
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.SnackbarHost
@@ -62,6 +65,7 @@ data class HomeNav(
     val openVaccine: (petId: Long, id: Long) -> Unit,
     val openVetVisit: (petId: Long, id: Long) -> Unit,
     val openGrooming: (petId: Long, id: Long) -> Unit,
+    val openDrawer: () -> Unit = {},
 )
 
 @Composable
@@ -71,7 +75,19 @@ fun HomeScreen(nav: HomeNav, viewModel: HomeViewModel = hiltViewModel()) {
     val scope = rememberCoroutineScope()
     val fedMessage = stringResource(R.string.home_fed_logged)
 
-    Scaffold(snackbarHost = { SnackbarHost(snackbar) }) { padding ->
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                title = { Text(stringResource(R.string.app_name)) },
+                navigationIcon = {
+                    IconButton(onClick = nav.openDrawer) {
+                        Icon(Icons.Filled.Menu, contentDescription = stringResource(R.string.drawer_open_menu))
+                    }
+                },
+            )
+        },
+        snackbarHost = { SnackbarHost(snackbar) },
+    ) { padding ->
         if (state.loading) return@Scaffold LoadingBox(Modifier.padding(padding))
         if (state.pets.isEmpty()) {
             Column(Modifier.fillMaxSize().padding(padding), verticalArrangement = Arrangement.Center) {

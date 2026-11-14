@@ -1,5 +1,6 @@
 package com.diary.petcare.ui.health
 
+import com.diary.petcare.core.FeatureFlags
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.ExperimentalLayoutApi
 import androidx.compose.foundation.layout.FlowRow
@@ -214,9 +215,11 @@ fun MedicineEditScreen(onBack: () -> Unit, viewModel: MedicineEditViewModel = hi
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
             )
         }
-        Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
-            Text(stringResource(R.string.remind_me), Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
-            Switch(checked = form.reminder, onCheckedChange = { v -> viewModel.update { it.copy(reminder = v) } })
+        if (FeatureFlags.REMINDERS) {
+            Row(Modifier.fillMaxWidth(), verticalAlignment = Alignment.CenterVertically) {
+                Text(stringResource(R.string.remind_me), Modifier.weight(1f), style = MaterialTheme.typography.bodyLarge)
+                Switch(checked = form.reminder, onCheckedChange = { v -> viewModel.update { it.copy(reminder = v) } })
+            }
         }
         FormTextField(
             value = form.notes,

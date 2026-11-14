@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Intent
 import android.database.sqlite.SQLiteDatabase
 import android.net.Uri
-import androidx.work.WorkManager
 import com.diary.petcare.BuildConfig
 import com.diary.petcare.core.Constants
 import com.diary.petcare.data.local.PetDatabase
@@ -114,8 +113,7 @@ class BackupManager @Inject constructor(
             // Point photo paths at this phone's photo folder (the app folder can differ).
             fixPhotoPaths(File(staging, DB_ENTRY))
 
-            // Stop reminders from the old data and swap the files.
-            WorkManager.getInstance(context).cancelAllWorkByTag("reminders")
+            // Swap the files. (v2: cancel the old reminder jobs first, see app/src/v2/README.md.)
             db.close()
             listOf(dbFile, File(dbFile.path + "-wal"), File(dbFile.path + "-shm")).forEach { it.delete() }
             File(staging, DB_ENTRY).copyTo(dbFile, overwrite = true)

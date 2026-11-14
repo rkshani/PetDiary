@@ -9,13 +9,13 @@
     <fields>;
 }
 
+# v2 (reminders, see app/src/v2/README.md) — un-comment when the reminder code is compiled again.
 # WorkManager creates the reminder worker by reflection with this constructor.
--keep class com.diary.petcare.data.reminder.ReminderWorker {
-    public <init>(android.content.Context, androidx.work.WorkerParameters);
-}
-
+#-keep class com.diary.petcare.data.reminder.ReminderWorker {
+#    public <init>(android.content.Context, androidx.work.WorkerParameters);
+#}
 # Hilt entry point used by the worker and the notification receiver.
--keep interface com.diary.petcare.data.reminder.ReminderEntryPoint { *; }
+#-keep interface com.diary.petcare.data.reminder.ReminderEntryPoint { *; }
 
 # Better crash stack traces without exposing source file names.
 -keepattributes LineNumberTable
