@@ -11,6 +11,8 @@ import com.diary.petcare.ui.components.PlaceholderScreen
 import com.diary.petcare.ui.expenses.ExpenseEditScreen
 import com.diary.petcare.ui.feeding.FeedingHistoryScreen
 import com.diary.petcare.ui.grooming.GroomingEditScreen
+import com.diary.petcare.ui.home.HomeNav
+import com.diary.petcare.ui.home.HomeScreen
 import com.diary.petcare.ui.feeding.FeedingScheduleEditScreen
 import com.diary.petcare.ui.health.MedicineEditScreen
 import com.diary.petcare.ui.health.VaccineEditScreen
@@ -36,7 +38,20 @@ fun PetDiaryNavHost(
     val go: (String) -> Unit = { navController.navigate(it) }
 
     NavHost(navController = navController, startDestination = startDestination, modifier = modifier) {
-        composable(Routes.HOME) { PlaceholderScreen(R.string.nav_home) }
+        composable(Routes.HOME) {
+            HomeScreen(
+                HomeNav(
+                    addPet = { go(Routes.petEdit()) },
+                    openPet = { go(Routes.petProfile(it)) },
+                    logWeight = { go(Routes.weightEdit(it)) },
+                    addExpense = { go(Routes.expenseEdit(it)) },
+                    addVetVisit = { go(Routes.vetVisitEdit(it)) },
+                    openVaccine = { petId, id -> go(Routes.vaccineEdit(petId, id)) },
+                    openVetVisit = { petId, id -> go(Routes.vetVisitEdit(petId, id)) },
+                    openGrooming = { petId, id -> go(Routes.groomingEdit(petId, id)) },
+                ),
+            )
+        }
         composable(Routes.PETS) {
             PetsScreen(
                 onAddPet = { go(Routes.petEdit()) },
