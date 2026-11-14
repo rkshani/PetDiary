@@ -8,6 +8,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.diary.petcare.R
 import com.diary.petcare.ui.components.PlaceholderScreen
+import com.diary.petcare.ui.expenses.ExpenseEditScreen
 import com.diary.petcare.ui.feeding.FeedingHistoryScreen
 import com.diary.petcare.ui.grooming.GroomingEditScreen
 import com.diary.petcare.ui.feeding.FeedingScheduleEditScreen
@@ -74,7 +75,7 @@ fun PetDiaryNavHost(
         composable(Routes.VET_VISIT_EDIT) { VetVisitEditScreen(onBack = back) }
         composable(Routes.WEIGHT_EDIT) { WeightEditScreen(onBack = back) }
         composable(Routes.GROOMING_EDIT) { GroomingEditScreen(onBack = back) }
-        composable(Routes.EXPENSE_EDIT) { PlaceholderScreen(R.string.tab_expenses) }
+        composable(Routes.EXPENSE_EDIT) { ExpenseEditScreen(onBack = back) }
         composable(Routes.NOTE_EDIT) { PlaceholderScreen(R.string.notes) }
         composable(Routes.TIMELINE) { PlaceholderScreen(R.string.profile_timeline) }
         composable(Routes.HEALTH_REPORT) { PlaceholderScreen(R.string.profile_health_report) }
