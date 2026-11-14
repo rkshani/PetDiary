@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="channel_feeding">کھانے کی یاد دہانیاں</string>
+    <string name="channel_medicine">دوا کی یاد دہانیاں</string>
+    <string name="channel_health">ویکسین اور ڈاکٹر کی یاد دہانیاں</string>
+    <string name="channel_grooming">صفائی ستھرائی کی یاد دہانیاں</string>
+    <string name="notif_title_feeding">%1$s کو کھانا کھلانے کا وقت 🍽️</string>
+    <string name="notif_title_medicine">%1$s کی دوا 💊</string>
+    <string name="notif_title_vaccine">%1$s کی ویکسین کا وقت 💉</string>
+    <string name="notif_title_vet">%1$s کا ڈاکٹر کے پاس جانا 🩺</string>
+    <string name="notif_title_grooming">%1$s کی صفائی کا وقت 🛁</string>
+    <string name="notif_title_custom">%1$s کے لیے یاد دہانی 🔔</string>
+    <string name="notif_done">ہو گیا</string>
+    <string name="notif_snooze">15 منٹ بعد</string>
+</resources>
